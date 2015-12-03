@@ -14,6 +14,7 @@ namespace ShopWinForm
     public partial class FormQLNguoiDung : Form
     {
         private ServiceUserClient svuser = new ServiceUserClient();
+
         public FormQLNguoiDung()
         {
             InitializeComponent();
