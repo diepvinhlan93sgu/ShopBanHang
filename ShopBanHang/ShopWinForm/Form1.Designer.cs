@@ -91,6 +91,7 @@
             this.toolStripMenuQuanLyNguoiDung.Name = "toolStripMenuQuanLyNguoiDung";
             this.toolStripMenuQuanLyNguoiDung.Size = new System.Drawing.Size(198, 22);
             this.toolStripMenuQuanLyNguoiDung.Text = "Quản Lý Người Dùng";
+            this.toolStripMenuQuanLyNguoiDung.Click += new System.EventHandler(this.toolStripMenuQuanLyNguoiDung_Click);
             // 
             // quảnLýSảnPhẩmToolStripMenuItem
             // 

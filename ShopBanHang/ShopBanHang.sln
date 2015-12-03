@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBanHang", "ShopBanHang\ShopBanHang.csproj", "{2C4472EF-628D-4E0A-978D-28F258368F14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopWinForm", "ShopWinForm\ShopWinForm.csproj", "{F9EC0672-6C7E-4DFF-8792-64E50EC0D3CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2C4472EF-628D-4E0A-978D-28F258368F14} = {2C4472EF-628D-4E0A-978D-28F258368F14}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

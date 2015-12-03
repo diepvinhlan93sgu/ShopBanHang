@@ -27,5 +27,11 @@ namespace ShopWinForm
             FormThongTin ftn = new FormThongTin();
             ftn.Show();
         }
+        
+        private void toolStripMenuQuanLyNguoiDung_Click(object sender, EventArgs e)
+        {
+            FormQLNguoiDung fuser = new FormQLNguoiDung();
+            fuser.Show();
+        }
     }
 }
