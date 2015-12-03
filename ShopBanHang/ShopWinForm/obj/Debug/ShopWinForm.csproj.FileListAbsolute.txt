@@ -1,0 +1,10 @@
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\bin\Debug\ShopWinForm.exe.config
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\bin\Debug\ShopWinForm.exe
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\bin\Debug\ShopWinForm.pdb
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.csprojResolveAssemblyReference.cache
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.Form1.resources
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormThongTin.resources
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.Properties.Resources.resources
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.csproj.GenerateResource.Cache
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.exe
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.pdb
