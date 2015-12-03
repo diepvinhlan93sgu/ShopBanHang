@@ -1,0 +1,10 @@
+E:\github\ShopBanHang\ShopBanHang\ShopBanHang\bin\ShopBanHang.dll.config
+E:\github\ShopBanHang\ShopBanHang\ShopBanHang\bin\ShopBanHang.dll
+E:\github\ShopBanHang\ShopBanHang\ShopBanHang\bin\ShopBanHang.pdb
+E:\github\ShopBanHang\ShopBanHang\ShopBanHang\bin\EntityFramework.dll
+E:\github\ShopBanHang\ShopBanHang\ShopBanHang\bin\EntityFramework.SqlServer.dll
+E:\github\ShopBanHang\ShopBanHang\ShopBanHang\bin\EntityFramework.xml
+E:\github\ShopBanHang\ShopBanHang\ShopBanHang\bin\EntityFramework.SqlServer.xml
+E:\github\ShopBanHang\ShopBanHang\ShopBanHang\obj\Debug\ShopBanHang.csprojResolveAssemblyReference.cache
+E:\github\ShopBanHang\ShopBanHang\ShopBanHang\obj\Debug\ShopBanHang.dll
+E:\github\ShopBanHang\ShopBanHang\ShopBanHang\obj\Debug\ShopBanHang.pdb
