@@ -9,3 +9,14 @@ E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.csproj.Gener
 E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.exe
 E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.pdb
 E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormQLNguoiDung.resources
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\bin\Debug\ShopWinForm.exe.config
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\bin\Debug\ShopWinForm.exe
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\bin\Debug\ShopWinForm.pdb
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.Form1.resources
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormQLNguoiDung.resources
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormThongTin.resources
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.Properties.Resources.resources
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.csproj.GenerateResource.Cache
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.exe
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.pdb
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.csprojResolveAssemblyReference.cache
