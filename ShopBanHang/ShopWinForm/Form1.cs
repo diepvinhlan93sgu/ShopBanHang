@@ -39,5 +39,16 @@ namespace ShopWinForm
             FormXemTonKho fxtk = new FormXemTonKho();
             fxtk.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quảnLýSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSanPham fsp = new FormSanPham();
+            fsp.Show();
+        }
     }
 }
