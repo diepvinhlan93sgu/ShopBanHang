@@ -33,6 +33,15 @@ namespace ShopWinForm
             cboDanhmuc.DataSource = svdm.All();
             cboDanhmuc.DisplayMember = "TenDM";
             cboDanhmuc.ValueMember = "MaDM";
+            var item = new[]
+           {
+                new { Text = "Còn hàng", Value = "0" }, 
+                new { Text = "Hết hàng", Value = "1" },
+                 
+           };
+            cboTrangthai.DataSource = item;
+            cboTrangthai.DisplayMember = "Text";
+            cboTrangthai.ValueMember = "value";
         }
 
         private void dvSanpham_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -56,10 +65,11 @@ namespace ShopWinForm
                 txtsize.Text = sp.KichThuoc;
                 txtgia.Text = sp.Gia.ToString();
                 txtha.Text = sp.HinhAnh.ToString();
-                
+                string urlHinh = "../../../MVCShop/Content/ImageSP/" + sp.HinhAnh;
+                pichinhanh.Image = Image.FromFile(urlHinh);
                 cboDanhmuc.Text = sp.TenDM;
-                //int a = Int32.Parse(sp.TrangThai.ToString());
-                //cboTrangthai.SelectedIndex = a;
+                int a = Int32.Parse(sp.TrangThai.ToString());
+                cboTrangthai.SelectedIndex = a;
             }
         }
         private void btnThoat_Click(object sender, EventArgs e)
@@ -80,7 +90,7 @@ namespace ShopWinForm
                 {
                     FileInfo fi = new FileInfo(i);
                     string[] xxx = i.Split('\\');
-                    string des = @"../../../MVCKLShop/Content/ImageSP/" + xxx[xxx.Length - 1];
+                    string des = @"../../../MVCShop/Content/ImageSP/" + xxx[xxx.Length - 1];
                     File.Delete(des);
 
                     //over.
@@ -92,6 +102,77 @@ namespace ShopWinForm
                     _hinh = Path.GetFileName(des);
                 }
             }
+        }
+
+        private void btntaomoi_Click(object sender, EventArgs e)
+        {
+            btnsua.Visible = false;
+
+            btnthem.Visible = true;
+            txtha.Clear();
+            txtsize.Clear();
+            txtmau.Clear();
+            txtgia.Clear();
+            txtmota.Clear();
+            txttensp.Clear();
+            txtsoluong.Clear();
+            cboDanhmuc.Text = "";
+            cboTrangthai.Text = "";
+            pichinhanh.Image = null;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn xóa sản phẩm này !!!", "Sure?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                int masp = Int32.Parse(txtmasp.Text.ToString().Trim());
+                svsp.XoaSanPham(masp);
+                dvSanpham.DataSource = null;
+                dvSanpham.DataSource = svspc.All();
+
+            }
+            else
+            { }
+        }
+
+        private void btnsua_Click(object sender, EventArgs e)
+        {
+            int masp = Int32.Parse(txtmasp.Text.Trim().ToString());
+            string tensp = txttensp.Text.Trim().ToString();
+            string mota = txtmota.Text.Trim().ToString();
+            string kichthuoc = txtsize.Text.Trim().ToString();
+            string mausac = txtmau.Text.Trim().ToString();
+            string gia1 = txtgia.Text.Trim().ToString();
+            decimal gia = decimal.Parse(gia1);
+
+            string soluong = txtsoluong.Text.ToString();
+            string madm = cboDanhmuc.SelectedValue.ToString().Trim();
+
+            string hinhanh = Path.GetFileName(txtha.Text);
+            int trangthai = Int32.Parse(cboTrangthai.SelectedValue.ToString());
+            svsp.SuaSanPham(masp, masp, tensp, madm, gia, mota, kichthuoc, mausac, hinhanh, soluong, trangthai);
+            MessageBox.Show("Sửa Thành Công");
+            dvSanpham.DataSource = null;
+            dvSanpham.DataSource = svspc.All();
+        }
+
+        private void btnthem_Click(object sender, EventArgs e)
+        {
+            string tensp = txttensp.Text.ToString().Trim();
+            string mota = txtmota.Text.ToString().Trim();
+            string kichthuoc = txtsize.Text.ToString().Trim();
+            string mausac = txtmau.Text.ToString().Trim();
+            string gia1 = txtgia.Text.ToString().Trim();
+            decimal gia = decimal.Parse(gia1);
+            //  decimal gia = decimal.Ceiling((decimal)gia2 + 0);
+
+            string soluong = txtsoluong.Text.ToString().Trim();
+            string madm = cboDanhmuc.SelectedValue.ToString().Trim();
+            string hinhanh = Path.GetFileName(txtha.Text);
+            svsp.ThemSanPham(1, tensp, madm, gia, mota, kichthuoc, mausac, hinhanh, soluong);
+
+            dvSanpham.DataSource = null;
+            dvSanpham.DataSource = svspc.All();
         }
     }
 }

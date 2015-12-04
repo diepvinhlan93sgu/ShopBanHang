@@ -1,0 +1,5 @@
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\bin\MVCShop.dll.config
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\bin\MVCShop.dll
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\bin\MVCShop.pdb
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.dll
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.pdb
