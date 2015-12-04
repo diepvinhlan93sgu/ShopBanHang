@@ -87,6 +87,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceSanPhamCustom\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +161,10 @@
     <None Include="Service References\ServiceReferenceUser\ShopWinForm.ServiceReferenceUser.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ServiceSanPhamCustom\ServiceSanPhamCustom.wsdl" />
+    <None Include="Service References\ServiceSanPhamCustom\ShopWinForm.ServiceSanPhamCustom.SanPhamCustom.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -169,6 +178,7 @@
     <WCFMetadataStorage Include="Service References\ServiceReferenceDanhMucSP\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceSanPham\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceUser\" />
+    <WCFMetadataStorage Include="Service References\ServiceSanPhamCustom\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferenceUser\ServiceUser.disco" />
@@ -211,6 +221,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferenceDanhMucSP\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceSanPhamCustom\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceSanPhamCustom\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceSanPhamCustom\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
