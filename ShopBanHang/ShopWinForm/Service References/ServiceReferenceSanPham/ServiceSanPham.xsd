@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57383/ServiceSanPham.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ShopBanHang" />
+  <xs:element name="All">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="AllResult" nillable="true" type="q1:ArrayOfSanPham" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChiTietSP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="masp" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChiTietSPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="ChiTietSPResult" nillable="true" type="q2:SanPham" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SanPhamTheoLoai">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loai" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SanPhamTheoLoaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="SanPhamTheoLoaiResult" nillable="true" type="q3:ArrayOfSanPham" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimKiem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loai" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimKiemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="TimKiemResult" nillable="true" type="q4:ArrayOfSanPham" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaSanPham">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="masp" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaSanPhamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="XoaSanPhamResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SuaSanPham">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maspht" type="xs:int" />
+        <xs:element minOccurs="0" name="masp" type="xs:int" />
+        <xs:element minOccurs="0" name="tensp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="madm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gia" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mota" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kichthuoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mausac" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hinhanh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="soluong" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="trangthai" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SuaSanPhamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SuaSanPhamResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ThemSanPham">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="masp" type="xs:int" />
+        <xs:element minOccurs="0" name="tensp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="madm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gia" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mota" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kichthuoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mausac" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hinhanh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="soluong" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ThemSanPhamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ThemSanPhamResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

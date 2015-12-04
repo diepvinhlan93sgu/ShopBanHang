@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8780f968-62b0-455f-8773-775cff613f2c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57383/ServiceDanhMucSP.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceDanhMucSP.wsdl" MetadataType="Wsdl" ID="bfb22191-41c8-4040-91d2-dac97d35c072" SourceId="1" SourceUrl="http://localhost:57383/ServiceDanhMucSP.svc?wsdl" />
+    <MetadataFile FileName="ServiceDanhMucSP.xsd" MetadataType="Schema" ID="101cabee-07ba-4d2d-b71a-48a9f10d990c" SourceId="1" SourceUrl="http://localhost:57383/ServiceDanhMucSP.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceDanhMucSP.disco" MetadataType="Disco" ID="99ddab43-189c-4f63-980f-fbbd7dffacdc" SourceId="1" SourceUrl="http://localhost:57383/ServiceDanhMucSP.svc?disco" />
+    <MetadataFile FileName="ServiceDanhMucSP1.xsd" MetadataType="Schema" ID="21b19571-38f7-4b52-a6f9-638d354b5570" SourceId="1" SourceUrl="http://localhost:57383/ServiceDanhMucSP.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceDanhMucSP2.xsd" MetadataType="Schema" ID="3972f4b7-be03-43f8-8056-c0c3c89ef755" SourceId="1" SourceUrl="http://localhost:57383/ServiceDanhMucSP.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

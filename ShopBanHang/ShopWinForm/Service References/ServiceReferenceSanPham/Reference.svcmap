@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6fca3b2a-5b32-444f-a5dc-15a906c361b1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57383/ServiceSanPham.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceSanPham.xsd" MetadataType="Schema" ID="8c30058e-96e1-4b14-9f3c-3ca9bb604bf3" SourceId="1" SourceUrl="http://localhost:57383/ServiceSanPham.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceSanPham1.xsd" MetadataType="Schema" ID="ace8d124-4180-4271-ad0c-5b6ff5b09cf9" SourceId="1" SourceUrl="http://localhost:57383/ServiceSanPham.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceSanPham2.xsd" MetadataType="Schema" ID="ff4d99d3-24ff-4a2c-b085-32e6b904b61f" SourceId="1" SourceUrl="http://localhost:57383/ServiceSanPham.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceSanPham.disco" MetadataType="Disco" ID="552c6e98-eae1-4a19-9b37-267427395c73" SourceId="1" SourceUrl="http://localhost:57383/ServiceSanPham.svc?disco" />
+    <MetadataFile FileName="ServiceSanPham.wsdl" MetadataType="Wsdl" ID="ed297309-a3b0-4a22-b052-febe7ff587cf" SourceId="1" SourceUrl="http://localhost:57383/ServiceSanPham.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -33,5 +33,11 @@ namespace ShopWinForm
             FormQLNguoiDung fuser = new FormQLNguoiDung();
             fuser.Show();
         }
+
+        private void xemTồnKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormXemTonKho fxtk = new FormXemTonKho();
+            fxtk.Show();
+        }
     }
 }

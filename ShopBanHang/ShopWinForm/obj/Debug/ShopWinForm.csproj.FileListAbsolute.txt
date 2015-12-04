@@ -20,3 +20,4 @@ C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinFo
 C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.exe
 C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.pdb
 C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.csprojResolveAssemblyReference.cache
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormXemTonKho.resources
