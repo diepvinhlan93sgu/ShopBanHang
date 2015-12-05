@@ -28,6 +28,7 @@ namespace ShopWinForm
         private void FormSanPham_Load(object sender, EventArgs e)
         {
             btnsua.Visible = false;
+            btnDelete.Visible = false;
             dvSanpham.AutoGenerateColumns = false;
             dvSanpham.DataSource = svspc.All();
             cboDanhmuc.DataSource = svdm.All();
@@ -35,13 +36,14 @@ namespace ShopWinForm
             cboDanhmuc.ValueMember = "MaDM";
             var item = new[]
            {
-                new { Text = "Còn hàng", Value = "0" }, 
-                new { Text = "Hết hàng", Value = "1" },
+                new { Text = "Còn Hiệu Lực", Value = "0" }, 
+                new { Text = "Hết Hiệu Lực", Value = "1" },
                  
            };
             cboTrangthai.DataSource = item;
             cboTrangthai.DisplayMember = "Text";
             cboTrangthai.ValueMember = "value";
+            xoaform();
         }
 
         private void dvSanpham_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -54,6 +56,7 @@ namespace ShopWinForm
             {
 
                 btnsua.Visible = true;
+                btnDelete.Visible = true;
 
                 btnthem.Visible = false;
                 SanPhamCustom sp = (SanPhamCustom)dvSanpham.SelectedRows[0].DataBoundItem;
@@ -121,6 +124,8 @@ namespace ShopWinForm
         {
             btnsua.Visible = false;
             btnthem.Visible = true;
+            btnDelete.Visible = false;
+
             xoaform();
         }
 
@@ -167,14 +172,12 @@ namespace ShopWinForm
             string kichthuoc = txtsize.Text.ToString().Trim();
             string mausac = txtmau.Text.ToString().Trim();
             string gia1 = txtgia.Text.ToString().Trim();
-            decimal gia = decimal.Parse(gia1);
-            //  decimal gia = decimal.Ceiling((decimal)gia2 + 0);
-
+            decimal gia = decimal.Parse(gia1);           
             string soluong = txtsoluong.Text.ToString().Trim();
             string madm = cboDanhmuc.SelectedValue.ToString().Trim();
             string hinhanh = Path.GetFileName(txtha.Text);
             svsp.ThemSanPham(1, tensp, madm, gia, mota, kichthuoc, mausac, hinhanh, soluong);
-
+            MessageBox.Show("Thêm Thành Công");
             dvSanpham.DataSource = null;
             dvSanpham.DataSource = svspc.All();
             xoaform();

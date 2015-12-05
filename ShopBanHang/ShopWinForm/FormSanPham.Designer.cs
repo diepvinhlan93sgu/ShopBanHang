@@ -48,12 +48,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtmasp = new System.Windows.Forms.TextBox();
             this.dvSanpham = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txttensp = new System.Windows.Forms.TextBox();
-            this.txtsize = new System.Windows.Forms.TextBox();
-            this.txtmau = new System.Windows.Forms.TextBox();
-            this.txtgia = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,8 +56,13 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txttensp = new System.Windows.Forms.TextBox();
+            this.txtsize = new System.Windows.Forms.TextBox();
+            this.txtmau = new System.Windows.Forms.TextBox();
+            this.txtgia = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.cboTrangthai = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pichinhanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvSanpham)).BeginInit();
             this.SuspendLayout();
@@ -275,6 +274,55 @@
             this.dvSanpham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvSanpham_CellContentClick);
             this.dvSanpham.SelectionChanged += new System.EventHandler(this.dvSanpham_SelectionChanged);
             // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "MaSP";
+            this.Column8.HeaderText = "Mã sản phẩm";
+            this.Column8.Name = "Column8";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "TenSP";
+            this.Column1.HeaderText = "Tên Sản Phẩm";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 105;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "TenDM";
+            this.Column4.HeaderText = "Loại Danh Mục";
+            this.Column4.Name = "Column4";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "MauSac";
+            this.Column7.HeaderText = "Màu sắc";
+            this.Column7.Name = "Column7";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "SoLuong";
+            this.Column6.HeaderText = "Số Lượng";
+            this.Column6.Name = "Column6";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Gia";
+            this.Column2.HeaderText = "Giá";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "MoTa";
+            this.Column3.HeaderText = "Mô Tả";
+            this.Column3.Name = "Column3";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "HinhAnh";
+            this.Column5.HeaderText = "Hình";
+            this.Column5.Name = "Column5";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -325,55 +373,6 @@
             this.label6.TabIndex = 58;
             this.label6.Text = "Quản lý sản phẩm";
             // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "MaSP";
-            this.Column8.HeaderText = "Mã sản phẩm";
-            this.Column8.Name = "Column8";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "TenSP";
-            this.Column1.HeaderText = "Tên Sản Phẩm";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 105;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "TenDM";
-            this.Column4.HeaderText = "Loại Danh Mục";
-            this.Column4.Name = "Column4";
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "MauSac";
-            this.Column7.HeaderText = "Màu sắc";
-            this.Column7.Name = "Column7";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "SoLuong";
-            this.Column6.HeaderText = "Số Lượng";
-            this.Column6.Name = "Column6";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Gia";
-            this.Column2.HeaderText = "Giá";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "MoTa";
-            this.Column3.HeaderText = "Mô Tả";
-            this.Column3.Name = "Column3";
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "HinhAnh";
-            this.Column5.HeaderText = "Hình";
-            this.Column5.Name = "Column5";
-            // 
             // cboTrangthai
             // 
             this.cboTrangthai.FormattingEnabled = true;
@@ -382,22 +381,13 @@
             this.cboTrangthai.Name = "cboTrangthai";
             this.cboTrangthai.Size = new System.Drawing.Size(131, 21);
             this.cboTrangthai.TabIndex = 84;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(350, 248);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 13);
-            this.label10.TabIndex = 85;
-            this.label10.Text = "Trạng thái";
+            this.cboTrangthai.Visible = false;
             // 
             // FormSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 570);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.cboTrangthai);
             this.Controls.Add(this.txtmasp);
             this.Controls.Add(this.txtgia);
@@ -472,7 +462,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.ComboBox cboTrangthai;
-        private System.Windows.Forms.Label label10;
 
 
     }

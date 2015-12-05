@@ -26,11 +26,18 @@ namespace ShopWinForm
 
         private void FormDanhMuc_Load(object sender, EventArgs e)
         {
+            btnxoa.Visible = false;
+            btnsua.Visible = false;
+            btnthem.Visible = true;
             dvDanhmuc.AutoGenerateColumns = false;
             dvDanhmuc.DataSource = svdm.All();
+            xoaform();
         }
         private void dvDanhmuc_SelectionChanged(object sender, EventArgs e)
         {
+            btnxoa.Visible = true;
+            btnsua.Visible = true;
+            btnthem.Visible = false;
             if (dvDanhmuc.SelectedRows.Count > 0)
             {
 
@@ -46,9 +53,10 @@ namespace ShopWinForm
             string madm = txtmadm.Text.ToString();
             string tendm = txttendm.Text.ToString();
             svdm.ThemDanhmuc(madm, tendm);
-
+            MessageBox.Show("Thêm Thành Công");
             dvDanhmuc.DataSource = null;
             dvDanhmuc.DataSource = svdm.All();
+            xoaform();
         }
 
         private void btnsua_Click(object sender, EventArgs e)
@@ -86,7 +94,9 @@ namespace ShopWinForm
         }
         private void xoaform()
         {
-           
+            btnxoa.Visible = false;
+            btnsua.Visible = false;
+            btnthem.Visible = true;
             txtmadm.Clear();
             txttendm.Clear();
         }

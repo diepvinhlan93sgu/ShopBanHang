@@ -47,3 +47,5 @@ C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinF
 C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.csproj.GenerateResource.Cache
 C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.exe
 C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.pdb
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormCTNhapHang.resources
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormQLNhapHang.resources
