@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="22c51145-33b4-4b4f-8768-3aba7ec58a92" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="338d7e1e-c2dc-4408-a01f-c9a0a9a49c33" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:57383/ServiceNhapHang.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceNhapHang.disco" MetadataType="Disco" ID="7b0ea1ae-0ea4-4c6c-83ea-927f302d434e" SourceId="1" SourceUrl="http://localhost:57383/ServiceNhapHang.svc?disco" />
-    <MetadataFile FileName="ServiceNhapHang.xsd" MetadataType="Schema" ID="151d542b-fea1-415a-ac74-ab799ccad3f5" SourceId="1" SourceUrl="http://localhost:57383/ServiceNhapHang.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceNhapHang.wsdl" MetadataType="Wsdl" ID="591c79e9-858a-481a-aa05-dadd49e425ea" SourceId="1" SourceUrl="http://localhost:57383/ServiceNhapHang.svc?wsdl" />
-    <MetadataFile FileName="ServiceNhapHang1.xsd" MetadataType="Schema" ID="32c4a0ad-fa70-41ec-9d94-bdf703a11404" SourceId="1" SourceUrl="http://localhost:57383/ServiceNhapHang.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceNhapHang2.xsd" MetadataType="Schema" ID="779e46f4-40cf-4b62-a145-0ca78da75c5c" SourceId="1" SourceUrl="http://localhost:57383/ServiceNhapHang.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceNhapHang.disco" MetadataType="Disco" ID="632606d8-626b-40ed-af2b-545313e0f731" SourceId="1" SourceUrl="http://localhost:57383/ServiceNhapHang.svc?disco" />
+    <MetadataFile FileName="ServiceNhapHang.xsd" MetadataType="Schema" ID="f522fd13-8d3e-4b4e-b322-0f86ee8a36fc" SourceId="1" SourceUrl="http://localhost:57383/ServiceNhapHang.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceNhapHang.wsdl" MetadataType="Wsdl" ID="a3d9b5f8-e30e-4c7d-8c8b-aeaf401e9b46" SourceId="1" SourceUrl="http://localhost:57383/ServiceNhapHang.svc?wsdl" />
+    <MetadataFile FileName="ServiceNhapHang1.xsd" MetadataType="Schema" ID="abda4d6a-6388-4262-84c2-85a46921c658" SourceId="1" SourceUrl="http://localhost:57383/ServiceNhapHang.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceNhapHang2.xsd" MetadataType="Schema" ID="dc892c30-9e13-40c5-b335-2a72f5511f91" SourceId="1" SourceUrl="http://localhost:57383/ServiceNhapHang.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

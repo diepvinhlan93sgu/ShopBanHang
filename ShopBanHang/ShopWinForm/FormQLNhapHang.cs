@@ -1,4 +1,4 @@
-﻿using ShopWinForm.ServiceReferenceNhapHang;
+﻿using ShopWinForm.ServiceNhapHang;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

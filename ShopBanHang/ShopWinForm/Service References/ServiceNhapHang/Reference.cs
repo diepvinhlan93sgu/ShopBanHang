@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ShopWinForm.ServiceReferenceNhapHang {
+namespace ShopWinForm.ServiceNhapHang {
     using System.Runtime.Serialization;
     using System;
     
@@ -168,20 +168,20 @@ namespace ShopWinForm.ServiceReferenceNhapHang {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReferenceNhapHang.IServiceNhapHang")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceNhapHang.IServiceNhapHang")]
     public interface IServiceNhapHang {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceNhapHang/All", ReplyAction="http://tempuri.org/IServiceNhapHang/AllResponse")]
-        ShopWinForm.ServiceReferenceNhapHang.WFNhapHang[] All();
+        ShopWinForm.ServiceNhapHang.WFNhapHang[] All();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceNhapHang/All", ReplyAction="http://tempuri.org/IServiceNhapHang/AllResponse")]
-        System.Threading.Tasks.Task<ShopWinForm.ServiceReferenceNhapHang.WFNhapHang[]> AllAsync();
+        System.Threading.Tasks.Task<ShopWinForm.ServiceNhapHang.WFNhapHang[]> AllAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceNhapHang/CTPhieuNhap", ReplyAction="http://tempuri.org/IServiceNhapHang/CTPhieuNhapResponse")]
-        ShopWinForm.ServiceReferenceNhapHang.WFCTPhieuNhap[] CTPhieuNhap(int mapn);
+        ShopWinForm.ServiceNhapHang.WFCTPhieuNhap[] CTPhieuNhap(int mapn);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceNhapHang/CTPhieuNhap", ReplyAction="http://tempuri.org/IServiceNhapHang/CTPhieuNhapResponse")]
-        System.Threading.Tasks.Task<ShopWinForm.ServiceReferenceNhapHang.WFCTPhieuNhap[]> CTPhieuNhapAsync(int mapn);
+        System.Threading.Tasks.Task<ShopWinForm.ServiceNhapHang.WFCTPhieuNhap[]> CTPhieuNhapAsync(int mapn);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceNhapHang/XoaPN", ReplyAction="http://tempuri.org/IServiceNhapHang/XoaPNResponse")]
         bool XoaPN(int masp);
@@ -202,19 +202,19 @@ namespace ShopWinForm.ServiceReferenceNhapHang {
         System.Threading.Tasks.Task<bool> ThemCTPNAsync(int mapn, int masp, int soluong);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceNhapHang/LayMaPN", ReplyAction="http://tempuri.org/IServiceNhapHang/LayMaPNResponse")]
-        ShopWinForm.ServiceReferenceNhapHang.WFNhapHang LayMaPN();
+        ShopWinForm.ServiceNhapHang.WFNhapHang LayMaPN();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceNhapHang/LayMaPN", ReplyAction="http://tempuri.org/IServiceNhapHang/LayMaPNResponse")]
-        System.Threading.Tasks.Task<ShopWinForm.ServiceReferenceNhapHang.WFNhapHang> LayMaPNAsync();
+        System.Threading.Tasks.Task<ShopWinForm.ServiceNhapHang.WFNhapHang> LayMaPNAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServiceNhapHangChannel : ShopWinForm.ServiceReferenceNhapHang.IServiceNhapHang, System.ServiceModel.IClientChannel {
+    public interface IServiceNhapHangChannel : ShopWinForm.ServiceNhapHang.IServiceNhapHang, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServiceNhapHangClient : System.ServiceModel.ClientBase<ShopWinForm.ServiceReferenceNhapHang.IServiceNhapHang>, ShopWinForm.ServiceReferenceNhapHang.IServiceNhapHang {
+    public partial class ServiceNhapHangClient : System.ServiceModel.ClientBase<ShopWinForm.ServiceNhapHang.IServiceNhapHang>, ShopWinForm.ServiceNhapHang.IServiceNhapHang {
         
         public ServiceNhapHangClient() {
         }
@@ -235,19 +235,19 @@ namespace ShopWinForm.ServiceReferenceNhapHang {
                 base(binding, remoteAddress) {
         }
         
-        public ShopWinForm.ServiceReferenceNhapHang.WFNhapHang[] All() {
+        public ShopWinForm.ServiceNhapHang.WFNhapHang[] All() {
             return base.Channel.All();
         }
         
-        public System.Threading.Tasks.Task<ShopWinForm.ServiceReferenceNhapHang.WFNhapHang[]> AllAsync() {
+        public System.Threading.Tasks.Task<ShopWinForm.ServiceNhapHang.WFNhapHang[]> AllAsync() {
             return base.Channel.AllAsync();
         }
         
-        public ShopWinForm.ServiceReferenceNhapHang.WFCTPhieuNhap[] CTPhieuNhap(int mapn) {
+        public ShopWinForm.ServiceNhapHang.WFCTPhieuNhap[] CTPhieuNhap(int mapn) {
             return base.Channel.CTPhieuNhap(mapn);
         }
         
-        public System.Threading.Tasks.Task<ShopWinForm.ServiceReferenceNhapHang.WFCTPhieuNhap[]> CTPhieuNhapAsync(int mapn) {
+        public System.Threading.Tasks.Task<ShopWinForm.ServiceNhapHang.WFCTPhieuNhap[]> CTPhieuNhapAsync(int mapn) {
             return base.Channel.CTPhieuNhapAsync(mapn);
         }
         
@@ -275,11 +275,11 @@ namespace ShopWinForm.ServiceReferenceNhapHang {
             return base.Channel.ThemCTPNAsync(mapn, masp, soluong);
         }
         
-        public ShopWinForm.ServiceReferenceNhapHang.WFNhapHang LayMaPN() {
+        public ShopWinForm.ServiceNhapHang.WFNhapHang LayMaPN() {
             return base.Channel.LayMaPN();
         }
         
-        public System.Threading.Tasks.Task<ShopWinForm.ServiceReferenceNhapHang.WFNhapHang> LayMaPNAsync() {
+        public System.Threading.Tasks.Task<ShopWinForm.ServiceNhapHang.WFNhapHang> LayMaPNAsync() {
             return base.Channel.LayMaPNAsync();
         }
     }

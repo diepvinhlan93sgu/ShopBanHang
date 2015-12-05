@@ -1,5 +1,5 @@
-﻿using ShopWinForm.ServiceReferenceDanhMucSP;
-using ShopWinForm.ServiceReferenceNhapHang;
+﻿using ShopWinForm.ServiceNhapHang;
+using ShopWinForm.ServiceReferenceDanhMucSP;
 using ShopWinForm.ServiceReferenceSanPham;
 using ShopWinForm.ServiceSanPhamCustom;
 using System;

@@ -29,3 +29,5 @@ E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormSanPham.
 C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\bin\Debug\ShopWinForm.exe.config
 C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.exe
 C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.pdb
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormCTNhapHang.resources
+E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormQLNhapHang.resources
