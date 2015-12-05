@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceNhapHang" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57383/ServiceNhapHang.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57383/ServiceNhapHang.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57383/ServiceNhapHang.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ShopBanHang" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceNhapHang_All_InputMessage">
+    <wsdl:part name="parameters" element="tns:All" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_All_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_CTPhieuNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:CTPhieuNhap" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_CTPhieuNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CTPhieuNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_XoaPN_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaPN" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_XoaPN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaPNResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_ThemPN_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemPN" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_ThemPN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemPNResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_ThemCTPN_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemCTPN" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_ThemCTPN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemCTPNResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_LayMaPN_InputMessage">
+    <wsdl:part name="parameters" element="tns:LayMaPN" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhapHang_LayMaPN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LayMaPNResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceNhapHang">
+    <wsdl:operation name="All">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhapHang/All" message="tns:IServiceNhapHang_All_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhapHang/AllResponse" message="tns:IServiceNhapHang_All_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CTPhieuNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhapHang/CTPhieuNhap" message="tns:IServiceNhapHang_CTPhieuNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhapHang/CTPhieuNhapResponse" message="tns:IServiceNhapHang_CTPhieuNhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaPN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhapHang/XoaPN" message="tns:IServiceNhapHang_XoaPN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhapHang/XoaPNResponse" message="tns:IServiceNhapHang_XoaPN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemPN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhapHang/ThemPN" message="tns:IServiceNhapHang_ThemPN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhapHang/ThemPNResponse" message="tns:IServiceNhapHang_ThemPN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemCTPN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhapHang/ThemCTPN" message="tns:IServiceNhapHang_ThemCTPN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhapHang/ThemCTPNResponse" message="tns:IServiceNhapHang_ThemCTPN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LayMaPN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhapHang/LayMaPN" message="tns:IServiceNhapHang_LayMaPN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhapHang/LayMaPNResponse" message="tns:IServiceNhapHang_LayMaPN_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceNhapHang" type="tns:IServiceNhapHang">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="All">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhapHang/All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CTPhieuNhap">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhapHang/CTPhieuNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaPN">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhapHang/XoaPN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemPN">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhapHang/ThemPN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemCTPN">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhapHang/ThemCTPN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayMaPN">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhapHang/LayMaPN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceNhapHang">
+    <wsdl:port name="BasicHttpBinding_IServiceNhapHang" binding="tns:BasicHttpBinding_IServiceNhapHang">
+      <soap:address location="http://localhost:57383/ServiceNhapHang.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
