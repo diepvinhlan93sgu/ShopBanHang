@@ -68,8 +68,9 @@ namespace ShopWinForm
                 string urlHinh = "../../../MVCShop/Content/ImageSP/" + sp.HinhAnh;
                 pichinhanh.Image = Image.FromFile(urlHinh);
                 cboDanhmuc.Text = sp.TenDM;
-                int a = Int32.Parse(sp.TrangThai.ToString());
-                cboTrangthai.SelectedIndex = a;
+                //int a = Int32.Parse(sp.TrangThai.ToString());
+                //cboTrangthai.SelectedIndex = a;
+               
             }
         }
         private void btnThoat_Click(object sender, EventArgs e)
@@ -103,12 +104,8 @@ namespace ShopWinForm
                 }
             }
         }
-
-        private void btntaomoi_Click(object sender, EventArgs e)
+        private void xoaform()
         {
-            btnsua.Visible = false;
-
-            btnthem.Visible = true;
             txtha.Clear();
             txtsize.Clear();
             txtmau.Clear();
@@ -120,6 +117,12 @@ namespace ShopWinForm
             cboTrangthai.Text = "";
             pichinhanh.Image = null;
         }
+        private void btntaomoi_Click(object sender, EventArgs e)
+        {
+            btnsua.Visible = false;
+            btnthem.Visible = true;
+            xoaform();
+        }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -129,6 +132,7 @@ namespace ShopWinForm
                 svsp.XoaSanPham(masp);
                 dvSanpham.DataSource = null;
                 dvSanpham.DataSource = svspc.All();
+                xoaform();
 
             }
             else
@@ -173,6 +177,7 @@ namespace ShopWinForm
 
             dvSanpham.DataSource = null;
             dvSanpham.DataSource = svspc.All();
+            xoaform();
         }
     }
 }

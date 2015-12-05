@@ -3,3 +3,4 @@ C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\b
 C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\bin\MVCShop.pdb
 C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.dll
 C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.pdb
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.csprojResolveAssemblyReference.cache

@@ -41,6 +41,7 @@
             this.thànhViênNhómToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.quảnLýDanhMụcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,6 +78,7 @@
             // 
             this.chứcNăngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuQuanLyNguoiDung,
+            this.quảnLýDanhMụcToolStripMenuItem,
             this.quảnLýSảnPhẩmToolStripMenuItem,
             this.nhậpHàngToolStripMenuItem,
             this.xemĐơnHàngToolStripMenuItem,
@@ -157,6 +159,13 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "QUẢN LÝ CỬA HÀNG";
             // 
+            // quảnLýDanhMụcToolStripMenuItem
+            // 
+            this.quảnLýDanhMụcToolStripMenuItem.Name = "quảnLýDanhMụcToolStripMenuItem";
+            this.quảnLýDanhMụcToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.quảnLýDanhMụcToolStripMenuItem.Text = "Quản Lý Danh Mục";
+            this.quảnLýDanhMụcToolStripMenuItem.Click += new System.EventHandler(this.quảnLýDanhMụcToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,6 +199,7 @@
         private System.Windows.Forms.ToolStripMenuItem thànhViênNhómToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýDanhMụcToolStripMenuItem;
     }
 }
 

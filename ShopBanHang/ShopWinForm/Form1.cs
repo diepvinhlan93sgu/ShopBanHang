@@ -50,5 +50,11 @@ namespace ShopWinForm
             FormSanPham fsp = new FormSanPham();
             fsp.Show();
         }
+
+        private void quảnLýDanhMụcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDanhMuc fdm = new FormDanhMuc();
+            fdm.Show();
+        }
     }
 }

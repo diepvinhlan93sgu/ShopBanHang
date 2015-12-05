@@ -13,5 +13,14 @@ namespace ShopBanHang
     {
         [OperationContract]
         List<DanhMucSP> All();
+
+        [OperationContract]
+        bool ThemDanhmuc(string madm, string tendm);
+
+        [OperationContract]
+        bool SuaDanhmuc(string dmht, string madm, string tendm);
+
+        [OperationContract]
+        bool XoaDanhmuc(string IDUser);
     }
 }

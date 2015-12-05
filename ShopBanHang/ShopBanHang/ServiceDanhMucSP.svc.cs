@@ -17,5 +17,54 @@ namespace ShopBanHang
         {
             return this.db.DanhMucSPs.ToList();
         }
+
+
+        public bool ThemDanhmuc(string madm, string tendm)
+        {
+            try
+            {
+                DanhMucSP dm = new DanhMucSP();
+                dm.MaDM = madm;
+                dm.TenDM = tendm;
+                db.DanhMucSPs.Add(dm);
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool SuaDanhmuc(string dmht, string madm, string tendm)
+        {
+            try
+            {
+                DanhMucSP dm = db.DanhMucSPs.First(p => p.MaDM.Trim() == dmht);
+                dm.MaDM = madm;
+                dm.TenDM = tendm;      
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool XoaDanhmuc(string madm)
+        {
+            try
+            {
+                DanhMucSP dm = db.DanhMucSPs.SingleOrDefault(p => p.MaDM.Contains(madm));
+                db.DanhMucSPs.Remove(dm);
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

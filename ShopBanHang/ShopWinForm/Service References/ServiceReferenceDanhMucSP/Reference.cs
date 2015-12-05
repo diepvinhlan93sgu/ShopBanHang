@@ -83,6 +83,24 @@ namespace ShopWinForm.ServiceReferenceDanhMucSP {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDanhMucSP/All", ReplyAction="http://tempuri.org/IServiceDanhMucSP/AllResponse")]
         System.Threading.Tasks.Task<ShopWinForm.ServiceReferenceDanhMucSP.DanhMucSP[]> AllAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDanhMucSP/ThemDanhmuc", ReplyAction="http://tempuri.org/IServiceDanhMucSP/ThemDanhmucResponse")]
+        bool ThemDanhmuc(string madm, string tendm);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDanhMucSP/ThemDanhmuc", ReplyAction="http://tempuri.org/IServiceDanhMucSP/ThemDanhmucResponse")]
+        System.Threading.Tasks.Task<bool> ThemDanhmucAsync(string madm, string tendm);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDanhMucSP/SuaDanhmuc", ReplyAction="http://tempuri.org/IServiceDanhMucSP/SuaDanhmucResponse")]
+        bool SuaDanhmuc(string dmht, string madm, string tendm);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDanhMucSP/SuaDanhmuc", ReplyAction="http://tempuri.org/IServiceDanhMucSP/SuaDanhmucResponse")]
+        System.Threading.Tasks.Task<bool> SuaDanhmucAsync(string dmht, string madm, string tendm);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDanhMucSP/XoaDanhmuc", ReplyAction="http://tempuri.org/IServiceDanhMucSP/XoaDanhmucResponse")]
+        bool XoaDanhmuc(string IDUser);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDanhMucSP/XoaDanhmuc", ReplyAction="http://tempuri.org/IServiceDanhMucSP/XoaDanhmucResponse")]
+        System.Threading.Tasks.Task<bool> XoaDanhmucAsync(string IDUser);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -118,6 +136,30 @@ namespace ShopWinForm.ServiceReferenceDanhMucSP {
         
         public System.Threading.Tasks.Task<ShopWinForm.ServiceReferenceDanhMucSP.DanhMucSP[]> AllAsync() {
             return base.Channel.AllAsync();
+        }
+        
+        public bool ThemDanhmuc(string madm, string tendm) {
+            return base.Channel.ThemDanhmuc(madm, tendm);
+        }
+        
+        public System.Threading.Tasks.Task<bool> ThemDanhmucAsync(string madm, string tendm) {
+            return base.Channel.ThemDanhmucAsync(madm, tendm);
+        }
+        
+        public bool SuaDanhmuc(string dmht, string madm, string tendm) {
+            return base.Channel.SuaDanhmuc(dmht, madm, tendm);
+        }
+        
+        public System.Threading.Tasks.Task<bool> SuaDanhmucAsync(string dmht, string madm, string tendm) {
+            return base.Channel.SuaDanhmucAsync(dmht, madm, tendm);
+        }
+        
+        public bool XoaDanhmuc(string IDUser) {
+            return base.Channel.XoaDanhmuc(IDUser);
+        }
+        
+        public System.Threading.Tasks.Task<bool> XoaDanhmucAsync(string IDUser) {
+            return base.Channel.XoaDanhmucAsync(IDUser);
         }
     }
 }

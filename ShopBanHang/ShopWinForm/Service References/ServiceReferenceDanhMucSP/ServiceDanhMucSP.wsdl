@@ -13,16 +13,73 @@
   <wsdl:message name="IServiceDanhMucSP_All_OutputMessage">
     <wsdl:part name="parameters" element="tns:AllResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceDanhMucSP_ThemDanhmuc_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemDanhmuc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDanhMucSP_ThemDanhmuc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemDanhmucResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDanhMucSP_SuaDanhmuc_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuaDanhmuc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDanhMucSP_SuaDanhmuc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuaDanhmucResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDanhMucSP_XoaDanhmuc_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaDanhmuc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDanhMucSP_XoaDanhmuc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaDanhmucResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServiceDanhMucSP">
     <wsdl:operation name="All">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceDanhMucSP/All" message="tns:IServiceDanhMucSP_All_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceDanhMucSP/AllResponse" message="tns:IServiceDanhMucSP_All_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemDanhmuc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDanhMucSP/ThemDanhmuc" message="tns:IServiceDanhMucSP_ThemDanhmuc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDanhMucSP/ThemDanhmucResponse" message="tns:IServiceDanhMucSP_ThemDanhmuc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaDanhmuc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDanhMucSP/SuaDanhmuc" message="tns:IServiceDanhMucSP_SuaDanhmuc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDanhMucSP/SuaDanhmucResponse" message="tns:IServiceDanhMucSP_SuaDanhmuc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaDanhmuc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDanhMucSP/XoaDanhmuc" message="tns:IServiceDanhMucSP_XoaDanhmuc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDanhMucSP/XoaDanhmucResponse" message="tns:IServiceDanhMucSP_XoaDanhmuc_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServiceDanhMucSP" type="tns:IServiceDanhMucSP">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="All">
       <soap:operation soapAction="http://tempuri.org/IServiceDanhMucSP/All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemDanhmuc">
+      <soap:operation soapAction="http://tempuri.org/IServiceDanhMucSP/ThemDanhmuc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaDanhmuc">
+      <soap:operation soapAction="http://tempuri.org/IServiceDanhMucSP/SuaDanhmuc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaDanhmuc">
+      <soap:operation soapAction="http://tempuri.org/IServiceDanhMucSP/XoaDanhmuc" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

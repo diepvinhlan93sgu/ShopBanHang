@@ -13,4 +13,49 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="ThemDanhmuc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="madm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tendm" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ThemDanhmucResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ThemDanhmucResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SuaDanhmuc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dmht" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="madm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tendm" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SuaDanhmucResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SuaDanhmucResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaDanhmuc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDUser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaDanhmucResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="XoaDanhmucResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
