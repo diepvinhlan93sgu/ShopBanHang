@@ -56,5 +56,11 @@ namespace ShopWinForm
             FormDanhMuc fdm = new FormDanhMuc();
             fdm.Show();
         }
+
+        private void nhậpHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormQLNhapHang nh = new FormQLNhapHang();
+            nh.Show();
+        }
     }
 }
