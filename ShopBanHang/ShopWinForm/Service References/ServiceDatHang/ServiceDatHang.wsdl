@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceDatHang" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/ShopBanHang" />
+      <xs:element name="insertHD">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="IDUser" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="Ngay" type="xs:dateTime" />
+            <xs:element minOccurs="0" name="TriGiaDH" type="xs:decimal" />
+            <xs:element minOccurs="0" name="matrangthai" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="insertHDResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="insertHDResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="insertCTHD">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="MaDonHang" type="xs:int" />
+            <xs:element minOccurs="0" name="MaSP" type="xs:int" />
+            <xs:element minOccurs="0" name="SoLuong" type="xs:int" />
+            <xs:element minOccurs="0" name="Gia" type="xs:decimal" />
+            <xs:element minOccurs="0" name="ThanhTien" type="xs:decimal" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="insertCTHDResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="insertCTHDResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="All">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="AllResult" nillable="true" type="q1:ArrayOfDonHang" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DonHangTheoUser">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="iduser" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DonHangTheoUserResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="DonHangTheoUserResult" nillable="true" type="q2:ArrayOfDonHang" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TimTheoNgay">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ngay" type="xs:dateTime" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TimTheoNgayResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="TimTheoNgayResult" nillable="true" type="q3:ArrayOfDonHang" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LayMaHD">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="iduser" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LayMaHDResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="LayMaHDResult" nillable="true" type="q4:DonHang" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LuuTrangThai">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="MaDonHang" type="xs:int" />
+            <xs:element minOccurs="0" name="matrangthai" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LuuTrangThaiResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="LuuTrangThaiResult" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ShopBanHang" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ShopBanHang" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfDonHang">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="DonHang" nillable="true" type="tns:DonHang" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfDonHang" nillable="true" type="tns:ArrayOfDonHang" />
+      <xs:complexType name="DonHang">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IDUser" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaDonHang" type="xs:int" />
+          <xs:element minOccurs="0" name="MaTrangThai" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Ngay" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TriGiaDH" nillable="true" type="xs:decimal" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="DonHang" nillable="true" type="tns:DonHang" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceDatHang_insertHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertHD" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_insertHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_insertCTHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertCTHD" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_insertCTHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertCTHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_All_InputMessage">
+    <wsdl:part name="parameters" element="tns:All" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_All_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_DonHangTheoUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DonHangTheoUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_DonHangTheoUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DonHangTheoUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_TimTheoNgay_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimTheoNgay" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_TimTheoNgay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimTheoNgayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_LayMaHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:LayMaHD" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_LayMaHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LayMaHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_LuuTrangThai_InputMessage">
+    <wsdl:part name="parameters" element="tns:LuuTrangThai" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_LuuTrangThai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LuuTrangThaiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceDatHang">
+    <wsdl:operation name="insertHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/insertHD" message="tns:IServiceDatHang_insertHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/insertHDResponse" message="tns:IServiceDatHang_insertHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertCTHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/insertCTHD" message="tns:IServiceDatHang_insertCTHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/insertCTHDResponse" message="tns:IServiceDatHang_insertCTHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="All">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/All" message="tns:IServiceDatHang_All_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/AllResponse" message="tns:IServiceDatHang_All_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DonHangTheoUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/DonHangTheoUser" message="tns:IServiceDatHang_DonHangTheoUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/DonHangTheoUserResponse" message="tns:IServiceDatHang_DonHangTheoUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimTheoNgay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/TimTheoNgay" message="tns:IServiceDatHang_TimTheoNgay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/TimTheoNgayResponse" message="tns:IServiceDatHang_TimTheoNgay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LayMaHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/LayMaHD" message="tns:IServiceDatHang_LayMaHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/LayMaHDResponse" message="tns:IServiceDatHang_LayMaHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LuuTrangThai">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/LuuTrangThai" message="tns:IServiceDatHang_LuuTrangThai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/LuuTrangThaiResponse" message="tns:IServiceDatHang_LuuTrangThai_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceDatHang" type="tns:IServiceDatHang">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertHD">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/insertHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertCTHD">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/insertCTHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="All">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DonHangTheoUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/DonHangTheoUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimTheoNgay">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/TimTheoNgay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayMaHD">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/LayMaHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LuuTrangThai">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/LuuTrangThai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceDatHang">
+    <wsdl:port name="BasicHttpBinding_IServiceDatHang" binding="tns:BasicHttpBinding_IServiceDatHang">
+      <soap:address location="http://localhost:57383/ServiceDatHang.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

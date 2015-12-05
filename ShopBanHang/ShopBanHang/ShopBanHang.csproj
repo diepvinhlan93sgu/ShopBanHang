@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,6 +76,7 @@
       <LastGenOutput>ShopModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <Content Include="ServiceCTPhieuNhapCustom.svc" />
+    <Content Include="ServiceDatHang.svc" />
     <Content Include="ServiceNhapHang.svc" />
     <Content Include="ServiceSanPham.svc" />
     <Content Include="ServiceSanPhamCustom.svc" />
@@ -118,6 +120,7 @@
     </Compile>
     <Compile Include="IServiceCTPhieuNhapCustom.cs" />
     <Compile Include="IServiceDanhMucSP.cs" />
+    <Compile Include="IServiceDatHang.cs" />
     <Compile Include="IServiceNhapHang.cs" />
     <Compile Include="IServiceSanPham.cs" />
     <Compile Include="IServiceSanPhamCustom.cs" />
@@ -139,6 +142,9 @@
     </Compile>
     <Compile Include="ServiceDanhMucSP.svc.cs">
       <DependentUpon>ServiceDanhMucSP.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceDatHang.svc.cs">
+      <DependentUpon>ServiceDatHang.svc</DependentUpon>
     </Compile>
     <Compile Include="ServiceNhapHang.svc.cs">
       <DependentUpon>ServiceNhapHang.svc</DependentUpon>

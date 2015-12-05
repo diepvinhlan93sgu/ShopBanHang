@@ -10,3 +10,9 @@ E:\github\ShopBanHang\ShopBanHang\MVCShop\bin\MVCShop.pdb
 E:\github\ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.csprojResolveAssemblyReference.cache
 E:\github\ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.dll
 E:\github\ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.pdb
+C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\bin\MVCShop.dll.config
+C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\bin\MVCShop.dll
+C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\bin\MVCShop.pdb
+C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.csprojResolveAssemblyReference.cache
+C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.dll
+C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\MVCShop\obj\Debug\MVCShop.pdb
