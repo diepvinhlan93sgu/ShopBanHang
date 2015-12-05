@@ -74,6 +74,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ShopModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="ServiceCTPhieuNhapCustom.svc" />
     <Content Include="ServiceNhapHang.svc" />
     <Content Include="ServiceSanPham.svc" />
     <Content Include="ServiceSanPhamCustom.svc" />
@@ -115,11 +116,13 @@
     <Compile Include="DonHang.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="IServiceCTPhieuNhapCustom.cs" />
     <Compile Include="IServiceDanhMucSP.cs" />
     <Compile Include="IServiceNhapHang.cs" />
     <Compile Include="IServiceSanPham.cs" />
     <Compile Include="IServiceSanPhamCustom.cs" />
     <Compile Include="IServiceUser.cs" />
+    <Compile Include="Model\CTPhieuNhapCustom.cs" />
     <Compile Include="Model\SanPhamCustom.cs" />
     <Compile Include="PhanQuyen.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
@@ -130,6 +133,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanPham.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceCTPhieuNhapCustom.svc.cs">
+      <DependentUpon>ServiceCTPhieuNhapCustom.svc</DependentUpon>
     </Compile>
     <Compile Include="ServiceDanhMucSP.svc.cs">
       <DependentUpon>ServiceDanhMucSP.svc</DependentUpon>
