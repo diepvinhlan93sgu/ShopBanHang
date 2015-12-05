@@ -74,6 +74,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ShopModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="ServiceNhapHang.svc" />
     <Content Include="ServiceSanPham.svc" />
     <Content Include="ServiceSanPhamCustom.svc" />
     <Content Include="ShopModel.Context.tt">
@@ -115,6 +116,7 @@
       <DependentUpon>ShopModel.tt</DependentUpon>
     </Compile>
     <Compile Include="IServiceDanhMucSP.cs" />
+    <Compile Include="IServiceNhapHang.cs" />
     <Compile Include="IServiceSanPham.cs" />
     <Compile Include="IServiceSanPhamCustom.cs" />
     <Compile Include="IServiceUser.cs" />
@@ -131,6 +133,9 @@
     </Compile>
     <Compile Include="ServiceDanhMucSP.svc.cs">
       <DependentUpon>ServiceDanhMucSP.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceNhapHang.svc.cs">
+      <DependentUpon>ServiceNhapHang.svc</DependentUpon>
     </Compile>
     <Compile Include="ServiceSanPham.svc.cs">
       <DependentUpon>ServiceSanPham.svc</DependentUpon>

@@ -26,3 +26,6 @@ C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinFo
 C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormDanhMuc.resources
 E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormDanhMuc.resources
 E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormSanPham.resources
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\bin\Debug\ShopWinForm.exe.config
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.exe
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.pdb

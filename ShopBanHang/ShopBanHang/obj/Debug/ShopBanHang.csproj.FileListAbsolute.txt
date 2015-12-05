@@ -18,3 +18,13 @@ C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHa
 C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\bin\EntityFramework.SqlServer.xml
 C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\obj\Debug\ShopBanHang.dll
 C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\obj\Debug\ShopBanHang.pdb
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\obj\Debug\ShopBanHang.csprojResolveAssemblyReference.cache
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\obj\Debug\ShopBanHang.dll
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\obj\Debug\ShopBanHang.pdb
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\bin\ShopBanHang.dll.config
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\bin\ShopBanHang.dll
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\bin\ShopBanHang.pdb
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\bin\EntityFramework.dll
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\bin\EntityFramework.SqlServer.dll
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\bin\EntityFramework.xml
+C:\Users\YeSiCheng\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopBanHang\bin\EntityFramework.SqlServer.xml
