@@ -121,6 +121,7 @@
             this.xemĐơnHàngToolStripMenuItem.Name = "xemĐơnHàngToolStripMenuItem";
             this.xemĐơnHàngToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.xemĐơnHàngToolStripMenuItem.Text = "Quản Lý Đơn Hàng";
+            this.xemĐơnHàngToolStripMenuItem.Click += new System.EventHandler(this.xemĐơnHàngToolStripMenuItem_Click);
             // 
             // xemTồnKhoToolStripMenuItem
             // 

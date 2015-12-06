@@ -62,5 +62,11 @@ namespace ShopWinForm
             FormQLNhapHang nh = new FormQLNhapHang();
             nh.Show();
         }
+
+        private void xemĐơnHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormQLDonHang qldh = new FormQLDonHang();
+            qldh.Show();
+        }
     }
 }

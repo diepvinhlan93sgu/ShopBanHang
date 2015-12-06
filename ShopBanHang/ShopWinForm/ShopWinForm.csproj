@@ -53,6 +53,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCTDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCTDonHang.Designer.cs">
+      <DependentUpon>FormCTDonHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCTNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,12 @@
     </Compile>
     <Compile Include="FormDanhMuc.Designer.cs">
       <DependentUpon>FormDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQLDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLDonHang.Designer.cs">
+      <DependentUpon>FormQLDonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="FormQLNguoiDung.cs">
       <SubType>Form</SubType>
@@ -98,12 +110,22 @@
     <Compile Include="MySession.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceCTDonHangCustom\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceNhapHang\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Service References\ServiceReferenceDanhMucSP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceDatHang\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -126,11 +148,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCTDonHang.resx">
+      <DependentUpon>FormCTDonHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCTNhapHang.resx">
       <DependentUpon>FormCTNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDanhMuc.resx">
       <DependentUpon>FormDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLDonHang.resx">
+      <DependentUpon>FormQLDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormQLNguoiDung.resx">
       <DependentUpon>FormQLNguoiDung.cs</DependentUpon>
@@ -165,6 +193,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\ServiceCTDonHangCustom\ServiceCTDonHangCustom.wsdl" />
+    <None Include="Service References\ServiceCTDonHangCustom\ServiceCTDonHangCustom.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceCTDonHangCustom\ServiceCTDonHangCustom1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceCTDonHangCustom\ServiceCTDonHangCustom2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceCTDonHangCustom\ShopWinForm.ServiceCTDonHangCustom.CTDonHangCustom.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceNhapHang\ServiceNhapHang.wsdl" />
     <None Include="Service References\ServiceNhapHang\ServiceNhapHang.xsd">
       <SubType>Designer</SubType>
@@ -192,6 +233,10 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ServiceReferenceDanhMucSP\ShopWinForm.ServiceReferenceDanhMucSP.DanhMucSP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceDatHang\ServiceDatHang.wsdl" />
+    <None Include="Service References\ServiceReferenceDatHang\ShopWinForm.ServiceReferenceDatHang.DonHang.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReferenceSanPham\ServiceSanPham.wsdl" />
@@ -234,8 +279,10 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceCTDonHangCustom\" />
     <WCFMetadataStorage Include="Service References\ServiceNhapHang\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceDanhMucSP\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceDatHang\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceSanPham\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceUser\" />
     <WCFMetadataStorage Include="Service References\ServiceSanPhamCustom\" />
@@ -308,6 +355,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceNhapHang\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceDatHang\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceDatHang\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceDatHang\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceCTDonHangCustom\ServiceCTDonHangCustom.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceCTDonHangCustom\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceCTDonHangCustom\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceCTDonHangCustom\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

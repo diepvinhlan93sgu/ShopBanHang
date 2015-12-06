@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cfd73668-5785-4847-8c3a-350802ef971c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57383/ServiceCTDonHangCustom.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceCTDonHangCustom.xsd" MetadataType="Schema" ID="689d3f57-d13b-4659-92ac-a8750299be3f" SourceId="1" SourceUrl="http://localhost:57383/ServiceCTDonHangCustom.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceCTDonHangCustom1.xsd" MetadataType="Schema" ID="0b8da997-3bd6-4916-bbf3-3ba00b2b7be2" SourceId="1" SourceUrl="http://localhost:57383/ServiceCTDonHangCustom.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceCTDonHangCustom.wsdl" MetadataType="Wsdl" ID="fb87c100-5157-44a4-a982-8bbddfa66019" SourceId="1" SourceUrl="http://localhost:57383/ServiceCTDonHangCustom.svc?wsdl" />
+    <MetadataFile FileName="ServiceCTDonHangCustom2.xsd" MetadataType="Schema" ID="61462ac5-3b09-4a67-b173-78814465a201" SourceId="1" SourceUrl="http://localhost:57383/ServiceCTDonHangCustom.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceCTDonHangCustom.disco" MetadataType="Disco" ID="fa40d3ca-17a9-45c5-976e-798daa9c8a92" SourceId="1" SourceUrl="http://localhost:57383/ServiceCTDonHangCustom.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
