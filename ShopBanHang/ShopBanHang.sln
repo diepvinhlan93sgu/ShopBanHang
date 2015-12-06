@@ -11,6 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopWinForm", "ShopWinForm\
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCShop", "MVCShop\MVCShop.csproj", "{85DD06E4-E84F-4BB6-97F8-D8285A176ED8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2C4472EF-628D-4E0A-978D-28F258368F14} = {2C4472EF-628D-4E0A-978D-28F258368F14}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

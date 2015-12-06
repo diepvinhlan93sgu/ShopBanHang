@@ -78,7 +78,7 @@
             this.txtngay.Margin = new System.Windows.Forms.Padding(4);
             this.txtngay.Name = "txtngay";
             this.txtngay.Size = new System.Drawing.Size(122, 20);
-            this.txtngay.TabIndex = 118;
+            this.txtngay.TabIndex = 6;
             // 
             // txtchucvu
             // 
@@ -95,7 +95,7 @@
             this.txtemail.Margin = new System.Windows.Forms.Padding(4);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(200, 20);
-            this.txtemail.TabIndex = 116;
+            this.txtemail.TabIndex = 7;
             // 
             // label9
             // 
@@ -147,7 +147,7 @@
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(200, 20);
-            this.txtDiaChi.TabIndex = 113;
+            this.txtDiaChi.TabIndex = 4;
             // 
             // label8
             // 
@@ -166,7 +166,7 @@
             this.txtFullname.Margin = new System.Windows.Forms.Padding(4);
             this.txtFullname.Name = "txtFullname";
             this.txtFullname.Size = new System.Drawing.Size(200, 20);
-            this.txtFullname.TabIndex = 111;
+            this.txtFullname.TabIndex = 3;
             // 
             // label7
             // 
@@ -233,7 +233,7 @@
             this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(200, 20);
-            this.txtPass.TabIndex = 106;
+            this.txtPass.TabIndex = 2;
             // 
             // btntaomoi
             // 
@@ -310,7 +310,7 @@
             this.txtsdt.Margin = new System.Windows.Forms.Padding(4);
             this.txtsdt.Name = "txtsdt";
             this.txtsdt.Size = new System.Drawing.Size(200, 20);
-            this.txtsdt.TabIndex = 101;
+            this.txtsdt.TabIndex = 5;
             this.txtsdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsdt_KeyPress);
             // 
             // txtUser
@@ -319,7 +319,7 @@
             this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(200, 20);
-            this.txtUser.TabIndex = 100;
+            this.txtUser.TabIndex = 1;
             // 
             // btnthem
             // 
