@@ -36,6 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label7
@@ -70,7 +72,7 @@
             // 
             // btnQuayve
             // 
-            this.btnQuayve.Location = new System.Drawing.Point(251, 179);
+            this.btnQuayve.Location = new System.Drawing.Point(256, 211);
             this.btnQuayve.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuayve.Name = "btnQuayve";
             this.btnQuayve.Size = new System.Drawing.Size(100, 28);
@@ -123,11 +125,34 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Các thành viên của nhóm";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(246, 172);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(110, 24);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "3111410003";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(57, 172);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(189, 24);
+            this.label9.TabIndex = 39;
+            this.label9.Text = "Trình Ngọc Chương -";
+            // 
             // FormThongTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 226);
+            this.ClientSize = new System.Drawing.Size(431, 258);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -153,5 +178,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
