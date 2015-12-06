@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceDatHang" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57383/ServiceDatHang.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57383/ServiceDatHang.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57383/ServiceDatHang.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ShopBanHang" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceDatHang_insertHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertHD" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_insertHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_insertCTHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertCTHD" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_insertCTHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertCTHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_All_InputMessage">
+    <wsdl:part name="parameters" element="tns:All" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_All_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_DonHangTheoUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DonHangTheoUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_DonHangTheoUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DonHangTheoUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_TimTheoNgay_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimTheoNgay" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_TimTheoNgay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimTheoNgayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_LayMaHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:LayMaHD" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_LayMaHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LayMaHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_LuuTrangThai_InputMessage">
+    <wsdl:part name="parameters" element="tns:LuuTrangThai" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDatHang_LuuTrangThai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LuuTrangThaiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceDatHang">
+    <wsdl:operation name="insertHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/insertHD" message="tns:IServiceDatHang_insertHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/insertHDResponse" message="tns:IServiceDatHang_insertHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertCTHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/insertCTHD" message="tns:IServiceDatHang_insertCTHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/insertCTHDResponse" message="tns:IServiceDatHang_insertCTHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="All">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/All" message="tns:IServiceDatHang_All_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/AllResponse" message="tns:IServiceDatHang_All_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DonHangTheoUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/DonHangTheoUser" message="tns:IServiceDatHang_DonHangTheoUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/DonHangTheoUserResponse" message="tns:IServiceDatHang_DonHangTheoUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimTheoNgay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/TimTheoNgay" message="tns:IServiceDatHang_TimTheoNgay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/TimTheoNgayResponse" message="tns:IServiceDatHang_TimTheoNgay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LayMaHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/LayMaHD" message="tns:IServiceDatHang_LayMaHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/LayMaHDResponse" message="tns:IServiceDatHang_LayMaHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LuuTrangThai">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDatHang/LuuTrangThai" message="tns:IServiceDatHang_LuuTrangThai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDatHang/LuuTrangThaiResponse" message="tns:IServiceDatHang_LuuTrangThai_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceDatHang" type="tns:IServiceDatHang">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertHD">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/insertHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertCTHD">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/insertCTHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="All">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DonHangTheoUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/DonHangTheoUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimTheoNgay">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/TimTheoNgay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayMaHD">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/LayMaHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LuuTrangThai">
+      <soap:operation soapAction="http://tempuri.org/IServiceDatHang/LuuTrangThai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceDatHang">
+    <wsdl:port name="BasicHttpBinding_IServiceDatHang" binding="tns:BasicHttpBinding_IServiceDatHang">
+      <soap:address location="http://localhost:57383/ServiceDatHang.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

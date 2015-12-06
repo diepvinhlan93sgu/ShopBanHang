@@ -36,7 +36,10 @@ namespace ShopWinForm
 
         private void btnThemMoi_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
+            _mapn = 0;
+            FormCTNhapHang ctnh = new FormCTNhapHang();
+            ctnh.Show();
         }
 
         private void dvPhieunhap_CellContentClick(object sender, DataGridViewCellEventArgs e)

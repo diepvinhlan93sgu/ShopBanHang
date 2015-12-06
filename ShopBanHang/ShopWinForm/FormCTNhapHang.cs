@@ -1,5 +1,7 @@
 ﻿using ShopWinForm.ServiceNhapHang;
+using ShopWinForm.ServiceReferenceCTPhieuNhapCustom;
 using ShopWinForm.ServiceReferenceDanhMucSP;
+using ShopWinForm.ServiceReferenceDatHang;
 using ShopWinForm.ServiceReferenceSanPham;
 using ShopWinForm.ServiceSanPhamCustom;
 using System;
@@ -22,6 +24,8 @@ namespace ShopWinForm
         private ServiceSanPhamClient svsp = new ServiceSanPhamClient();
         private ServiceDanhMucSPClient svdm = new ServiceDanhMucSPClient();
         private ServiceSanPhamCustomClient svspc = new ServiceSanPhamCustomClient();
+        private ServiceDatHangClient svdh = new ServiceDatHangClient();
+        private ServiceCTPhieuNhapCustomClient svctpnc = new ServiceCTPhieuNhapCustomClient();
         
 
         public FormCTNhapHang()
@@ -41,23 +45,14 @@ namespace ShopWinForm
                 cboloaisp.DataSource = svdm.All();
                 cboloaisp.DisplayMember = "TenDM";
                 cboloaisp.ValueMember = "MaDM";
-
-
-
-
-
             }
             else
             {
                 btnLuu.Visible = false;
                 tabControl1.Visible = false;
                 dvctnhaphang.AutoGenerateColumns = false;
-                //
+                dvctnhaphang.DataSource = svctpnc.CTPhieuNhap(_mapn);
                 dTNgayNhap.Value = _ngay;
-
-
-
-
             }
         }
 

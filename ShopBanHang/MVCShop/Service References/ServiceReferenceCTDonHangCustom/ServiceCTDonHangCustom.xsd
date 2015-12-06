@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ShopBanHang" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ShopBanHang" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfCTDonHangCustom">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CTDonHangCustom" nillable="true" type="tns:CTDonHangCustom" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCTDonHangCustom" nillable="true" type="tns:ArrayOfCTDonHangCustom" />
+  <xs:complexType name="CTDonHangCustom">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Gia" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MaDonHang" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MaSP" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SoLuong" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TenSP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ThanhTien" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CTDonHangCustom" nillable="true" type="tns:CTDonHangCustom" />
+</xs:schema>

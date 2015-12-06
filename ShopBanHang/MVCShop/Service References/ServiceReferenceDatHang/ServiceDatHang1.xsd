@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57383/ServiceDatHang.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ShopBanHang" />
+  <xs:element name="insertHD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Ngay" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="TriGiaDH" type="xs:decimal" />
+        <xs:element minOccurs="0" name="matrangthai" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertHDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertHDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertCTHD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaDonHang" type="xs:int" />
+        <xs:element minOccurs="0" name="MaSP" type="xs:int" />
+        <xs:element minOccurs="0" name="SoLuong" type="xs:int" />
+        <xs:element minOccurs="0" name="Gia" type="xs:decimal" />
+        <xs:element minOccurs="0" name="ThanhTien" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertCTHDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertCTHDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="All">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="AllResult" nillable="true" type="q1:ArrayOfDonHang" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DonHangTheoUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iduser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DonHangTheoUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="DonHangTheoUserResult" nillable="true" type="q2:ArrayOfDonHang" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimTheoNgay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ngay" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimTheoNgayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="TimTheoNgayResult" nillable="true" type="q3:ArrayOfDonHang" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LayMaHD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iduser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LayMaHDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ShopBanHang" minOccurs="0" name="LayMaHDResult" nillable="true" type="q4:DonHang" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LuuTrangThai">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaDonHang" type="xs:int" />
+        <xs:element minOccurs="0" name="matrangthai" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LuuTrangThaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LuuTrangThaiResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

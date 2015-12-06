@@ -120,6 +120,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceReferenceCTPhieuNhapCustom\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReferenceDanhMucSP\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -222,6 +227,19 @@
     <None Include="Service References\ServiceNhapHang\ShopWinForm.ServiceNhapHang.WFNhapHang.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ServiceReferenceCTPhieuNhapCustom\ServiceCTPhieuNhapCustom.wsdl" />
+    <None Include="Service References\ServiceReferenceCTPhieuNhapCustom\ServiceCTPhieuNhapCustom.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceCTPhieuNhapCustom\ServiceCTPhieuNhapCustom1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceCTPhieuNhapCustom\ServiceCTPhieuNhapCustom2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceCTPhieuNhapCustom\ShopWinForm.ServiceReferenceCTPhieuNhapCustom.CTPhieuNhapCustom.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReferenceDanhMucSP\ServiceDanhMucSP.wsdl" />
     <None Include="Service References\ServiceReferenceDanhMucSP\ServiceDanhMucSP.xsd">
       <SubType>Designer</SubType>
@@ -281,6 +299,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceCTDonHangCustom\" />
     <WCFMetadataStorage Include="Service References\ServiceNhapHang\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceCTPhieuNhapCustom\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceDanhMucSP\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceDatHang\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceSanPham\" />
@@ -382,6 +401,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceCTDonHangCustom\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceCTPhieuNhapCustom\ServiceCTPhieuNhapCustom.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceCTPhieuNhapCustom\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceCTPhieuNhapCustom\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceCTPhieuNhapCustom\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

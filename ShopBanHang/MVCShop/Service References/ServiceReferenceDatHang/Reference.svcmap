@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f369ad79-94f5-492f-9332-bb8d86eb7682" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57383/ServiceDatHang.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceDatHang.xsd" MetadataType="Schema" ID="a64ade41-480c-4130-89bb-956b0c87ef37" SourceId="1" SourceUrl="http://localhost:57383/ServiceDatHang.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceDatHang1.xsd" MetadataType="Schema" ID="e9d5eafc-1721-4744-8dc7-f98f7c620c55" SourceId="1" SourceUrl="http://localhost:57383/ServiceDatHang.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceDatHang2.xsd" MetadataType="Schema" ID="0c7c02ec-cd42-41cd-86bd-98adc87f9c75" SourceId="1" SourceUrl="http://localhost:57383/ServiceDatHang.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceDatHang.disco" MetadataType="Disco" ID="e8e35925-2925-4799-b5f3-6af0259bc77d" SourceId="1" SourceUrl="http://localhost:57383/ServiceDatHang.svc?disco" />
+    <MetadataFile FileName="ServiceDatHang.wsdl" MetadataType="Wsdl" ID="9c44f417-9448-40e0-85f2-2ebf21bf8b35" SourceId="1" SourceUrl="http://localhost:57383/ServiceDatHang.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f73d17c7-b1ba-4803-93d8-019b77b372d3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57383/ServiceCTPhieuNhapCustom.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceCTPhieuNhapCustom.xsd" MetadataType="Schema" ID="6b9e5df6-843e-483f-b8cd-2f5b15a8307e" SourceId="1" SourceUrl="http://localhost:57383/ServiceCTPhieuNhapCustom.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceCTPhieuNhapCustom1.xsd" MetadataType="Schema" ID="5beb124c-91e1-4081-a8cd-7264248e0b7c" SourceId="1" SourceUrl="http://localhost:57383/ServiceCTPhieuNhapCustom.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceCTPhieuNhapCustom.disco" MetadataType="Disco" ID="99e82635-0637-4430-98c6-2fa162bd547d" SourceId="1" SourceUrl="http://localhost:57383/ServiceCTPhieuNhapCustom.svc?disco" />
+    <MetadataFile FileName="ServiceCTPhieuNhapCustom.wsdl" MetadataType="Wsdl" ID="6a8c7f24-a700-4061-9223-f87b1d94f475" SourceId="1" SourceUrl="http://localhost:57383/ServiceCTPhieuNhapCustom.svc?wsdl" />
+    <MetadataFile FileName="ServiceCTPhieuNhapCustom2.xsd" MetadataType="Schema" ID="cf02ea5f-2b20-47e6-8861-7d02dc840fdc" SourceId="1" SourceUrl="http://localhost:57383/ServiceCTPhieuNhapCustom.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ShopBanHang" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ShopBanHang" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfCTPhieuNhapCustom">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CTPhieuNhapCustom" nillable="true" type="tns:CTPhieuNhapCustom" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCTPhieuNhapCustom" nillable="true" type="tns:ArrayOfCTPhieuNhapCustom" />
+  <xs:complexType name="CTPhieuNhapCustom">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MaPN" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MaSP" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SoLuong" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TenSP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CTPhieuNhapCustom" nillable="true" type="tns:CTPhieuNhapCustom" />
+</xs:schema>
