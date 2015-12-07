@@ -99,10 +99,10 @@ namespace ShopWinForm
         }
 
 
-
         private void btnThem_Click(object sender, EventArgs e)
         {
-            int idSP = cboTenSP.SelectedIndex;
+            //int idSP = cboTenSP.SelectedIndex;
+            int idSP = Int32.Parse(idsp.Text);
             string tenSP = Convert.ToString(cboTenSP.Text);
             int soLuong = 0;
             if (txtSoLuong.Text == "")
@@ -204,6 +204,7 @@ namespace ShopWinForm
             string tenDM = dvSanpham.Rows[e.RowIndex].Cells[4].Value.ToString().Trim();
 
             cboTenSP.Text = tenSP.ToString();
+            idsp.Text = idSP.ToString();
             cboloaisp.Text = tenDM.ToString();
 
         }
@@ -241,5 +242,7 @@ namespace ShopWinForm
             {
             }
         }
+
+        
     }
 }

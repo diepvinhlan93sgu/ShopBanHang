@@ -60,6 +60,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.idsp = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvctnhaphang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvSanpham)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -93,6 +94,7 @@
             this.dvctnhaphang.Name = "dvctnhaphang";
             this.dvctnhaphang.Size = new System.Drawing.Size(367, 236);
             this.dvctnhaphang.TabIndex = 2;
+            this.dvctnhaphang.SelectionChanged += new System.EventHandler(this.dvctnhaphang_SelectionChanged);
             // 
             // Column1
             // 
@@ -154,6 +156,7 @@
             this.btnLuu.TabIndex = 14;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // MaDM
             // 
@@ -195,6 +198,7 @@
             this.btnChon.TabIndex = 2;
             this.btnChon.Text = "Chọn";
             this.btnChon.UseVisualStyleBackColor = true;
+            this.btnChon.Click += new System.EventHandler(this.btnChon_Click);
             // 
             // btnThemSPMoi
             // 
@@ -204,6 +208,7 @@
             this.btnThemSPMoi.TabIndex = 1;
             this.btnThemSPMoi.Text = "Thêm sản phẩm mới";
             this.btnThemSPMoi.UseVisualStyleBackColor = true;
+            this.btnThemSPMoi.Click += new System.EventHandler(this.btnThemSPMoi_Click);
             // 
             // dvSanpham
             // 
@@ -218,6 +223,7 @@
             this.dvSanpham.Name = "dvSanpham";
             this.dvSanpham.Size = new System.Drawing.Size(512, 315);
             this.dvSanpham.TabIndex = 0;
+            this.dvSanpham.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dvSanpham_CellMouseUp);
             // 
             // tabPage2
             // 
@@ -247,6 +253,7 @@
             this.cboloaisp.Name = "cboloaisp";
             this.cboloaisp.Size = new System.Drawing.Size(133, 21);
             this.cboloaisp.TabIndex = 13;
+            this.cboloaisp.SelectedIndexChanged += new System.EventHandler(this.cboloaisp_SelectedIndexChanged);
             // 
             // btnXoa
             // 
@@ -257,6 +264,7 @@
             this.btnXoa.TabIndex = 12;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnXoaTrong
             // 
@@ -267,6 +275,7 @@
             this.btnXoaTrong.TabIndex = 10;
             this.btnXoaTrong.Text = "Xóa trống";
             this.btnXoaTrong.UseVisualStyleBackColor = true;
+            this.btnXoaTrong.Click += new System.EventHandler(this.btnXoaTrong_Click);
             // 
             // btnThem
             // 
@@ -277,6 +286,7 @@
             this.btnThem.TabIndex = 9;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtSoLuong
             // 
@@ -325,9 +335,11 @@
             this.btnChonSanPham.TabIndex = 2;
             this.btnChonSanPham.Text = "Chọn sản phẩm";
             this.btnChonSanPham.UseVisualStyleBackColor = true;
+            this.btnChonSanPham.Click += new System.EventHandler(this.btnChonSanPham_Click);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.idsp);
             this.groupBox2.Controls.Add(this.cboTenSP);
             this.groupBox2.Controls.Add(this.cboloaisp);
             this.groupBox2.Controls.Add(this.btnXoa);
@@ -382,6 +394,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin phiếu nhập";
             // 
+            // idsp
+            // 
+            this.idsp.Location = new System.Drawing.Point(373, 90);
+            this.idsp.Name = "idsp";
+            this.idsp.Size = new System.Drawing.Size(100, 20);
+            this.idsp.TabIndex = 17;
+            this.idsp.Visible = false;
+            // 
             // FormCTNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,6 +414,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormCTNhapHang";
             this.Text = "FormCTNhapHang";
+            this.Load += new System.EventHandler(this.FormCTNhapHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvctnhaphang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvSanpham)).EndInit();
             this.tabPage2.ResumeLayout(false);
@@ -442,5 +463,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox idsp;
     }
 }
