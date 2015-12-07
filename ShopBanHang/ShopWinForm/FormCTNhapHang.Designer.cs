@@ -240,18 +240,21 @@
             // 
             // cboTenSP
             // 
+            this.cboTenSP.Enabled = false;
             this.cboTenSP.FormattingEnabled = true;
-            this.cboTenSP.Location = new System.Drawing.Point(233, 149);
+            this.cboTenSP.Location = new System.Drawing.Point(233, 144);
             this.cboTenSP.Name = "cboTenSP";
-            this.cboTenSP.Size = new System.Drawing.Size(132, 21);
+            this.cboTenSP.Size = new System.Drawing.Size(134, 21);
             this.cboTenSP.TabIndex = 14;
+            this.cboTenSP.SelectedIndexChanged += new System.EventHandler(this.cboTenSP_SelectedIndexChanged);
             // 
             // cboloaisp
             // 
+            this.cboloaisp.Enabled = false;
             this.cboloaisp.FormattingEnabled = true;
             this.cboloaisp.Location = new System.Drawing.Point(234, 90);
             this.cboloaisp.Name = "cboloaisp";
-            this.cboloaisp.Size = new System.Drawing.Size(133, 21);
+            this.cboloaisp.Size = new System.Drawing.Size(131, 21);
             this.cboloaisp.TabIndex = 13;
             this.cboloaisp.SelectedIndexChanged += new System.EventHandler(this.cboloaisp_SelectedIndexChanged);
             // 
@@ -268,10 +271,10 @@
             // 
             // btnXoaTrong
             // 
-            this.btnXoaTrong.Location = new System.Drawing.Point(244, 29);
+            this.btnXoaTrong.Location = new System.Drawing.Point(372, 206);
             this.btnXoaTrong.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaTrong.Name = "btnXoaTrong";
-            this.btnXoaTrong.Size = new System.Drawing.Size(100, 28);
+            this.btnXoaTrong.Size = new System.Drawing.Size(101, 20);
             this.btnXoaTrong.TabIndex = 10;
             this.btnXoaTrong.Text = "Xóa trống";
             this.btnXoaTrong.UseVisualStyleBackColor = true;
@@ -293,8 +296,9 @@
             this.txtSoLuong.Location = new System.Drawing.Point(233, 206);
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(132, 20);
+            this.txtSoLuong.Size = new System.Drawing.Size(134, 20);
             this.txtSoLuong.TabIndex = 8;
+            this.txtSoLuong.TextChanged += new System.EventHandler(this.txtSoLuong_TextChanged);
             // 
             // label5
             // 
@@ -309,7 +313,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(128, 152);
+            this.label4.Location = new System.Drawing.Point(128, 147);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 13);
@@ -328,10 +332,10 @@
             // 
             // btnChonSanPham
             // 
-            this.btnChonSanPham.Location = new System.Drawing.Point(120, 29);
+            this.btnChonSanPham.Location = new System.Drawing.Point(372, 143);
             this.btnChonSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.btnChonSanPham.Name = "btnChonSanPham";
-            this.btnChonSanPham.Size = new System.Drawing.Size(115, 28);
+            this.btnChonSanPham.Size = new System.Drawing.Size(101, 21);
             this.btnChonSanPham.TabIndex = 2;
             this.btnChonSanPham.Text = "Chọn sản phẩm";
             this.btnChonSanPham.UseVisualStyleBackColor = true;

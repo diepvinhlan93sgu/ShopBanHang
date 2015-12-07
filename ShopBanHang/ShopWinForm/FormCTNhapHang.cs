@@ -243,6 +243,16 @@ namespace ShopWinForm
             }
         }
 
+        private void cboTenSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSoLuong_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }
