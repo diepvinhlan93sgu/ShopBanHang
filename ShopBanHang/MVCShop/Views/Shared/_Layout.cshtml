@@ -1,327 +1,321 @@
 ﻿
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta content="text/html; charset=UTF-8" />
+    <meta content="text/html; charset=UTF-8"/>
     <title>
-        CHÀO MỪNG ĐẾN VỚI KL SHOP
-    </title>
-    <link href="../Content/App_Themes/Default/StyleSheet.css" type="text/css" rel="stylesheet" />
-    <style type="text/css">
-        .style1 {
-            text-align: center;
-        }
+	CHÀO MỪNG ĐẾN VỚI POS SHOP
+</title><link href="../Content/App_Themes/Default/StyleSheet.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+.style1 {
+	text-align: center;
+}
+.style2 {
+	text-align: center;
+	font-size: x-large;
+}
+.style3 {
+	font-size: large;
+	text-align: center;
+}
+.style4 {
+	font-size: medium;
+	text-align: center;
+}
 
-        .style2 {
-            text-align: center;
-            font-size: x-large;
-        }
-
-        .style3 {
-            font-size: large;
-            text-align: center;
-        }
-
-        .style4 {
-            font-size: medium;
-            text-align: center;
-        }
-    </style>
+</style>
     <script src="../Content/JS/jquery-1.6.3.min.js"></script>
-    <script src="../Content/JS/jquery.easing.1.3.js"></script>
-    <script src="../Content/JS/jquery.animate-colors-min.js"></script>
-
-    <script src="../Content/JS/jquery.skitter.min.js"></script>
-    <script src="../Content/JS/highlight.js"></script>
-    <script src="../Content/JS/sexy-bookmarks-public.js"></script>
+	<script src="../Content/JS/jquery.easing.1.3.js"></script>
+	<script src="../Content/JS/jquery.animate-colors-min.js"></script>
+	
+	<script src="../Content/JS/jquery.skitter.min.js"></script>
+	<script src="../Content/JS/highlight.js"></script>
+	<script src="../Content/JS/sexy-bookmarks-public.js"></script>
 </head>
 <body>
-
-    <div id="Main">
-
-
-
-        <link rel="stylesheet" type="text/css" href="..Content/JS/CS/vbulletin_important.css">
+    
+<div id="Main">
+        
 
 
 
 
+<link rel="stylesheet" type="text/css" href="..Content/JS/CS/vbulletin_important.css">
 
-        <script>
-            $(document).ready(function () {
 
-                var options = {};
+	
+	
+	
+	
+	<script>
+	    $(document).ready(function () {
 
-                if (document.location.search) {
-                    var array = document.location.search.split('=');
-                    var param = array[0].replace('?', '');
-                    var value = array[1];
+	        var options = {};
 
-                    if (param == 'animation') {
-                        options.animation = value;
-                    }
-                    else if (param == 'type_navigation') {
-                        if (value == 'dots_preview') {
-                            $('.border_box').css({ 'marginBottom': '40px' });
-                            options['dots'] = true;
-                            options['preview'] = true;
-                        }
-                        else {
-                            options[value] = true;
-                            if (value == 'dots') $('.border_box').css({ 'marginBottom': '40px' });
-                        }
-                    }
-                }
+	        if (document.location.search) {
+	            var array = document.location.search.split('=');
+	            var param = array[0].replace('?', '');
+	            var value = array[1];
 
-                $('.box_skitter_large').skitter(options);
+	            if (param == 'animation') {
+	                options.animation = value;
+	            }
+	            else if (param == 'type_navigation') {
+	                if (value == 'dots_preview') {
+	                    $('.border_box').css({ 'marginBottom': '40px' });
+	                    options['dots'] = true;
+	                    options['preview'] = true;
+	                }
+	                else {
+	                    options[value] = true;
+	                    if (value == 'dots') $('.border_box').css({ 'marginBottom': '40px' });
+	                }
+	            }
+	        }
 
-                // Highlight
-                $('pre.code').highlight({ source: 1, zebra: 1, indent: 'space', list: 'ol' });
+	        $('.box_skitter_large').skitter(options);
 
-            });
-        </script>
-        <script type="text/javascript">
-            jQuery(function ($) {
-                $('#webtuonglai-top').jRegister({
-                    height: 50,
-                    width: 50
-                });
-            });
-        </script>
-        <script type="text/javascript">
-            function select_all(obj) {
-                var text_val = eval(obj);
-                text_val.focus();
-                text_val.select();
-                if (!document.all) return; // IE only
-                r = text_val.createTextRange();
-                r.execCommand('copy');
-            }
-        </script>
+	        // Highlight
+	        $('pre.code').highlight({ source: 1, zebra: 1, indent: 'space', list: 'ol' });
 
-        <div id="bannerTOP">
-            <a href="">
-                <img src="../Content/Images/Banner.jpg" alt="" width="1096" border=0>
-            </a>
+	    });
+	</script>
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('#webtuonglai-top').jRegister({
+            height: 50,
+            width: 50
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    function select_all(obj) {
+        var text_val = eval(obj);
+        text_val.focus();
+        text_val.select();
+        if (!document.all) return; // IE only 
+        r = text_val.createTextRange();
+        r.execCommand('copy');
+    }
+</script> 
+
+
+<div id="bannerTOP"><A href=""><IMG  
+src="../Content/Images/Banner.jpg" alt="" width="1096" border=0></A> </div>
+<div id="banner">
+   
+   
+    <div id="bnLeft"><font color=white> </font></div>
+    <div id="bnMid2" style="left: 0px; top: 2px">
+        <!--#line 1-->
+        
+
+        
+        <div id="searchTop">
+   
         </div>
-        <div id="banner">
+        
+        <div id="mnTop">
+            <div class="mnTop">
+<DIV id=sclmenu style="width: 520px"><A href="@Url.Action("Index", "SanPham")"><FONT size=3> TRANG CHỦ</FONT> 
+</A>&nbsp; | &nbsp; 
+<DIV style="DISPLAY: inline" id=mnSanpham></DIV>
+<DIV style="DISPLAY: inline" id=mnNews>&nbsp; <A href="../Other/HDMuaHang">HƯỚNG DẪN</A>&nbsp;&nbsp;|&nbsp;&nbsp;<A 
+href="../Other/GioiThieu">GIỚI 
+THIỆU&nbsp;</A>&nbsp;|&nbsp; 
+<A href="../Other/LienHe">LIÊN HỆ</A>&nbsp; |&nbsp; <IMG border=0 
+align=absMiddle src="../Content/images/beach_chair_48.png" height=22></DIV>
+</DIV>
 
-
-            <div id="bnLeft"><font color=white> </font></div>
-            <div id="bnMid2" style="left: 0px; top: 2px">
-                <!--#line 1-->
-
-
-                <div id="searchTop">
-
-                </div>
-
-                <div id="mnTop">
-                    <div class="mnTop">
-                        <div id=sclmenu style="width: 520px">
-                            <a href="@Url.Action("Index", "SanPham")">
-                                <font size=3> TRANG CHỦ</font>
-                            </a>&nbsp; | &nbsp;
-                            <div style="DISPLAY: inline" id=mnSanpham></div>
-                            <div style="DISPLAY: inline" id=mnNews>
-                                &nbsp; <a href="../Other/BaoHanh">BẢO HÀNH</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="../Other/GioiThieu">
-                                    GIỚI
-                                    THIỆU&nbsp;
-                                </a>&nbsp;|&nbsp;
-                                <a href="../Other/LienHe">LIÊN HỆ</a>&nbsp; |&nbsp; <img border=0
-                                                                                         align=absMiddle src="../Content/images/beach_chair_48.png" height=22>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!--#line 2-->
-                <div id="supportTop">
-                    <div id='supportTopMarquee' class='supportTopMarquee'><marquee behavior='scroll' direction='left' scrolldelay='120' scrollamount='3' onmouseover='this.stop();' onmouseout='this.start();'><p style="MARGIN: 0in 0in 0pt" class=MsoNormal><span style="mso-ansi-language: EN-US" lang=EN-US><font size=3><font face="Times New Roman">&nbsp;<span style="COLOR: yellow; mso-ansi-language: EN-US" lang=EN-US>Chào mừng bạn đến KL SHOP <?xml namespace prefix=o ns="urn:schemas-microsoft-com:office:office" ?>
-                    <o:p></o:p></span></p></FONT></FONT></SPAN></marquee></div>
-                </div>
-
-
-
-
-            </div>
-            <div id="bnRight"><font color=white> </font></div>
-
-
+</div>
         </div>
-        <div>
-            <div id='divBannerTop'><div style='padding-left:5px; width:1075px; height: 299px; float:left; text-align:center;overflow:hidden;'><div id='content'><div class='border_box'><div class='box_skitter box_skitter_large'><ul><li><img src='../Content/Uploads/Adver/SLide3.jpg' class='Loa nghe nhạc iPhone' width='1070' title='' border='0'><div class='label_text'><p></p></div></li></ul><ul><li><img src='../Content/Uploads/Adver/SLide1.jpg' class='iPhone 4s' width='1070' title='iPhone 4s' border='0'><div class='label_text'><p></p></div></li></ul><ul><li><img src='../Content/Uploads/Adver/SLide2.jpg' class='iPad 3' width='1070' title='iPad 3' border='0'><div class='label_text'><p></p></div></li></ul></div></div></div></div></div>
-
-
-            <div id="mnLeft">
-                <table cellpadding="0" cellspacing="0" align="center">
-                    <tr>
-                        <td style="padding-top:5px; padding-left:5px; width: 15px;">&nbsp;</td>
-                    </tr>
-                </table>
-                <div id='mnLeftTop' class='mnLeftTitle'>CÁC MÔN THỂ DỤC</div>
-
-                @{Html.RenderAction("DanhMucSP", "SanPham");}
-
-                <div id='mnLeftBot'></div>
-
-
-
-
-
-                <div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/03082011/News/208314471.gif' width='175' title='iPhone 3Gs 16GB' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/31072009/News/20731173542.gif' width='175' title='hoangyenmobile' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/micro.gif' width='175' title='Thẻ nhớ dung lượng cao' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/08082011/News/2088215446.gif' width='175' title='iphone tặng bluetooth' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/08082011/News/208822311.jpg' width='175' title='philips 2 thang' border='0'></a></div><div style='padding-top:15px;'>
-                    <br><br><br>
-                    <div style="WIDTH: 120px">
-                    </div>
-                </div>
-            </div>
-
-            @RenderBody()
-
-
-            <script src="../Content/JS/TNtips.js" type="text/javascript"></script>
-            <script type="text/javascript" src="../Content/JS/highslide/highslide-full.js"></script>
-            <link rel="stylesheet" type="text/css" href="../Content/JS/highslide/highslide.css" />
-            <script type="text/javascript">
-                hs.graphicsDir = '../JS/highslide/graphics/index.html';
-                hs.align = 'center';
-                hs.transitions = ['expand', 'crossfade'];
-                hs.wrapperClassName = 'dark borderless floating-caption';
-                hs.outlineType = 'glossy-dark';
-                hs.wrapperClassName = 'dark';
-                hs.fadeInOut = true;
-                hs.dimmingOpacity = .95;
-
-
-
-                // Add the controlbar
-                if (hs.addSlideshow) hs.addSlideshow({
-                    //slideshowGroup: 'group1',
-                    interval: 4000,
-                    repeat: false,
-                    useControls: true,
-                    fixedControls: 'fit',
-                    overlayOptions: {
-                        opacity: .6,
-                        position: 'bottom center',
-                        hideOnMouseOut: true
-                    }
-                });
-
-            </script>
-            <script type="text/javascript">
-
-                /***********************************************
-                * Cross browser Marquee II- © Dynamic Drive (www.dynamicdrive.com)
-                * This notice MUST stay intact for legal use
-                * Visit http://www.dynamicdrive.com/ for this script and 100s more.
-                ***********************************************/
-
-                var delayb4scroll = 60 //Specify initial delay before marquee starts to scroll on page (2000=2 seconds)
-                var marqueespeed = 1 //Specify marquee scroll speed (larger is faster 1-10)
-                var pauseit = 1 //Pause marquee onMousever (0=no. 1=yes)?
-
-                ////NO NEED TO EDIT BELOW THIS LINE////////////
-
-                var copyspeed = marqueespeed
-                var pausespeed = (pauseit == 0) ? copyspeed : 0
-                var actualheight = ''
-
-                function scrollmarquee() {
-                    if (parseInt(cross_marquee.style.top) > (actualheight * (-1) + 8))
-                        cross_marquee.style.top = parseInt(cross_marquee.style.top) - copyspeed + "px"
-                    else
-                        cross_marquee.style.top = parseInt(marqueeheight) + 8 + "px"
-                }
-
-                function initializemarquee() {
-                    cross_marquee = document.getElementById("vmarquee")
-                    cross_marquee.style.top = 0
-                    marqueeheight = document.getElementById("marqueecontainer").offsetHeight
-                    actualheight = cross_marquee.offsetHeight
-                    if (window.opera || navigator.userAgent.indexOf("Netscape/7") != -1) { //if Opera or Netscape 7x, add scrollbars to scroll and exit
-                        cross_marquee.style.height = marqueeheight + "px"
-                        cross_marquee.style.overflow = "scroll"
-                        return
-                    }
-                    setTimeout('lefttime=setInterval("scrollmarquee()",30)', delayb4scroll)
-                }
-
-                if (window.addEventListener)
-                    window.addEventListener("load", initializemarquee, false)
-                else if (window.attachEvent)
-                    window.attachEvent("onload", initializemarquee)
-                else if (document.getElementById)
-                    window.onload = initializemarquee
-            </script>
-            <body>
-                <div id="mnRight">
-
-
-
-                    @{Html.RenderPartial("~/Views/User/DangNhap.cshtml");}
-
-
-
-                    <div id='mnLeftTop' class='mnLeftTitle'>Giỏ Hàng</div>
-                    <div id='mnLeftContent'>
-                        @{Html.RenderPartial("~/Views/GioHang/Menugiohang.cshtml");}
-                    </div>
-                    <div id='mnLeftBot'></div>
-                    <div id='mnLeftTop' class='mnLeftTitle'>
-                        Tìm Kiếm
-                    </div>
-                    <div id='mnLeftContent'>
-                        <div class='cl'>
-                            @{Html.RenderPartial("~/Views/SanPham/TimKiem.cshtml");}
-                        </div>
-                    </div>
-                    <div id='mnLeftBot'></div>
-                    <div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/02112009/News/20112122558.gif' width='175' title='vienthinh' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/20092010/News/20920115350.jpg' width='175' title='thegioimaytinh' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/08082011/News/208822720.jpg' width='175' title='Đt philips' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/02022012/News/2022101511.jpg' width='175' title='usb 3g' border='0'></a></div>
-
-                </div>
-                <div id="Footer">
-                    <div id='FooterWelcome'><marquee behavior='scroll' direction='left' onmouseover='this.stop();' onmouseout='this.start();' scrolldelay='120' scrollamount='1'><p style="MARGIN: 0in 0in 0pt" class=MsoNormal><span style="mso-ansi-language: EN-US" lang=EN-US><font size=3><font face="Times New Roman">&nbsp;<span style="COLOR: red; mso-ansi-language: EN-US" lang=EN-US>Chào mừng bạn đến KL SHOP <?xml namespace prefix=o ns="urn:schemas-microsoft-com:office:office" ?>
-                    <o:p></o:p></span></p></FONT></FONT></SPAN></marquee></div><div id='FooterMenu'>
-                        <div id=sclmenu>
-                            <a href="../SanPham/Index">
-                                <font size=3>TRANG CHỦ</font>
-                            </a>&nbsp; | &nbsp;
-                            <div style="DISPLAY: inline" id=mnSanpham>
-                                <a href="../Other/BaoHanh">BẢO HÀNH</a>&nbsp;
-                            </div>
-                            |&nbsp;
-                            <div style="DISPLAY: inline" id=mnNews><a href="../Other/GioiThieu">GIỚI THIỆU</a>&nbsp;</div>
-                            &nbsp;|&nbsp;
-                            <a href="../Other/LienHe">LIÊN HỆ</a>&nbsp; |&nbsp; <img border=0
-                                                                                     align=absMiddle src="../Content/images/beach_chair_48.png" height=22>
-                        </div>
-                    </div><div id='FooterInfo'>
-                        <font size=2>
-                            <div style="POSITION: absolute; TOP: -8299px"></div>
-                            <strong>
-                                <font size=3>
-                                    Shop Khánh Lộc
-                                    -SGU
-                                </font> - <font size=3>
-                                    <strong>
-                                        <span style="FONT-FAMILY: Tahoma; COLOR: blue">273</span>
-                                    </strong>An Dương Vương Q.5
-                                </font>
-                            </strong> - &nbsp;<br>ĐT: 083 .8484005 - Email:
-                        </font><a href="mailto:sgu_mobile@yahoo.com">
-                            <font size=2>sgu_KLShop@yahoo.com</font>
-                        </a><font size=2> - Website:</font><a target=_blank>www.KLShop.com</FONT></a>
-                        <p></p>
-                        <p align=center><font size=1>Copyright © 2014 - 2015 </font></p>
-                        <div style="POSITION: absolute; TOP: -8599px" align=center> </div>
-                    </div>
-                </div>
-            </body>
-
+        
+        
+        
+        <!--#line 2-->
+        <div id="supportTop"><div id='supportTopMarquee' class='supportTopMarquee'><marquee behavior='scroll' direction='left' scrolldelay='10' scrollamount='3' onmouseover='this.stop();' onmouseout='this.start();'><P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-ansi-language: EN-US" lang=EN-US><FONT size=3><FONT face="Times New Roman">&nbsp;<SPAN style="COLOR: lightyellow; mso-ansi-language: EN-US" lang=EN-US>Chào mừng bạn đến <span style="color:yellow"> POS SHOP</span> <?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></P></FONT></FONT></SPAN></marquee></div>
         </div>
+        
+        
+        
+       
+    </div>
+    <div id="bnRight"><font color=white> </font></div>
+    
+    
+</div>
+<div>
+<div id='divBannerTop'><div style='padding-left:5px; width:1075px; height: 299px; float:left; text-align:center;overflow:hidden;'><div id='content'><div class='border_box'><div class='box_skitter box_skitter_large'><ul><li><img src='../Content/Uploads/Adver/SLide3.jpg' class='Loa nghe nhạc iPhone' width='1070' title='' border='0'><div class='label_text'><p></p></div></li></ul><ul><li><img src='../Content/Uploads/Adver/SLide1.jpg' class='iPhone 4s' width='1070' title='iPhone 4s' border='0'><div class='label_text'><p></p></div></li></ul><ul><li><img src='../Content/Uploads/Adver/SLide2.jpg' class='iPad 3' width='1070' title='iPad 3' border='0'><div class='label_text'><p></p></div></li></ul></div></div></div></div></div>
+
+
+
+
+    <div id="mnLeft">
+         <table cellpadding="0" cellspacing="0" align="center">
+	<tr>
+	    <td style="padding-top:5px; padding-left:5px; width: 15px;">&nbsp;</td>
+	</tr>
+	</table>
+        <div id='mnLeftTop' class='mnLeftTitle'>DANH MỤC</div>
+   
+           @{Html.RenderAction("DanhMucSP", "SanPham");}			
+        
+      <div id='mnLeftBot'></div>
+       
+    
+         
+
+
+ 
+<div style='padding-top:0px;text-align:center; float:left;'><a  target='_blank'><img src='../Content/Uploads/Adver/03082011/News/208314471.gif' width='175' title='iPhone 3Gs 16GB' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a  target='_blank'><img src='../Content/Uploads/Adver/31072009/News/20731173542.gif' width='175' title='hoangyenmobile' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a  target='_blank'><img src='../Content/Uploads/Adver/micro.gif' width='175' title='Thẻ nhớ dung lượng cao' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a  target='_blank'><img src='../Content/Uploads/Adver/08082011/News/2088215446.gif' width='175' title='iphone tặng bluetooth' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a  target='_blank'><img src='../Content/Uploads/Adver/08082011/News/208822311.jpg' width='175' title='philips 2 thang' border='0'></a></div><div style='padding-top:15px;'><br><BR><BR>
+<DIV style="WIDTH: 120px">
+</DIV></div>   
+        </div>
+
+
+        @RenderBody()
+        
+
+
+<script src="../Content/JS/TNtips.js" type="text/javascript"></script>
+<script type="text/javascript" src="../Content/JS/highslide/highslide-full.js"></script>
+<link rel="stylesheet" type="text/css" href="../Content/JS/highslide/highslide.css" />
+<script type="text/javascript">
+    hs.graphicsDir = '../JS/highslide/graphics/index.html';
+    hs.align = 'center';
+    hs.transitions = ['expand', 'crossfade'];
+    hs.wrapperClassName = 'dark borderless floating-caption';
+    hs.outlineType = 'glossy-dark';
+    hs.wrapperClassName = 'dark';
+    hs.fadeInOut = true;
+    hs.dimmingOpacity = .95;
+
+
+
+    // Add the controlbar
+    if (hs.addSlideshow) hs.addSlideshow({
+        //slideshowGroup: 'group1',
+        interval: 4000,
+        repeat: false,
+        useControls: true,
+        fixedControls: 'fit',
+        overlayOptions: {
+            opacity: .6,
+            position: 'bottom center',
+            hideOnMouseOut: true
+        }
+    });
+
+</script>
+
+<script type="text/javascript">
+
+    /***********************************************
+    * Cross browser Marquee II- © Dynamic Drive (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit http://www.dynamicdrive.com/ for this script and 100s more.
+    ***********************************************/
+
+    var delayb4scroll = 60 //Specify initial delay before marquee starts to scroll on page (2000=2 seconds)
+    var marqueespeed = 1 //Specify marquee scroll speed (larger is faster 1-10)
+    var pauseit = 1 //Pause marquee onMousever (0=no. 1=yes)?
+
+    ////NO NEED TO EDIT BELOW THIS LINE////////////
+
+    var copyspeed = marqueespeed
+    var pausespeed = (pauseit == 0) ? copyspeed : 0
+    var actualheight = ''
+
+    function scrollmarquee() {
+        if (parseInt(cross_marquee.style.top) > (actualheight * (-1) + 8))
+            cross_marquee.style.top = parseInt(cross_marquee.style.top) - copyspeed + "px"
+        else
+            cross_marquee.style.top = parseInt(marqueeheight) + 8 + "px"
+    }
+
+    function initializemarquee() {
+        cross_marquee = document.getElementById("vmarquee")
+        cross_marquee.style.top = 0
+        marqueeheight = document.getElementById("marqueecontainer").offsetHeight
+        actualheight = cross_marquee.offsetHeight
+        if (window.opera || navigator.userAgent.indexOf("Netscape/7") != -1) { //if Opera or Netscape 7x, add scrollbars to scroll and exit
+            cross_marquee.style.height = marqueeheight + "px"
+            cross_marquee.style.overflow = "scroll"
+            return
+        }
+        setTimeout('lefttime=setInterval("scrollmarquee()",30)', delayb4scroll)
+    }
+
+    if (window.addEventListener)
+        window.addEventListener("load", initializemarquee, false)
+    else if (window.attachEvent)
+        window.attachEvent("onload", initializemarquee)
+    else if (document.getElementById)
+        window.onload = initializemarquee
+</script>
+
+<body>
+     <div id="mnRight">
+
+          
+   
+
+    
+ @{Html.RenderPartial("~/Views/User/DangNhap.cshtml");}
+
+
+          
+ 
+
+    <div id='mnLeftTop' class='mnLeftTitle'>Giỏ Hàng</div>
+         <div id='mnLeftContent'>
+     @{Html.RenderPartial("~/Views/GioHang/Menugiohang.cshtml");}
+        </div>
+         <div id='mnLeftBot'></div>
+         <div id='mnLeftTop' class='mnLeftTitle'>
+	Tìm Kiếm</div>
+         <div id='mnLeftContent'>
+	<div class='cl' >
+          @{Html.RenderPartial("~/Views/SanPham/TimKiem.cshtml");}
+      </div>
+
+    </div>
+    <div id='mnLeftBot'></div>
+         <div style='padding-top:0px;text-align:center; float:left;'><a  target='_blank'><img src='../Content/Uploads/Adver/02112009/News/20112122558.gif' width='175' title='vienthinh' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/20092010/News/20920115350.jpg' width='175' title='thegioimaytinh' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a  target='_blank'><img src='../Content/Uploads/Adver/08082011/News/208822720.jpg' width='175' title='Đt philips' border='0'></a></div><div style='padding-top:0px;text-align:center; float:left;'><a target='_blank'><img src='../Content/Uploads/Adver/02022012/News/2022101511.jpg' width='175' title='usb 3g' border='0'></a></div>
+    
+    </div>
+<div id="Footer"><div id='FooterWelcome'><marquee behavior='scroll' direction='left' onmouseover='this.stop();' onmouseout='this.start();' scrolldelay='10' scrollamount='3'><P style="MARGIN: 0in 0in 0pt" class=MsoNormal><SPAN style="mso-ansi-language: EN-US" lang=EN-US><FONT size=3><FONT face="Times New Roman">&nbsp;<SPAN style="COLOR: darkslategrey; mso-ansi-language: EN-US" lang=EN-US>Chào mừng bạn đến <span style="color:darkred"> POS SHOP</span> <?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></P></FONT></FONT></SPAN></marquee></div><div id='FooterMenu'>
+<DIV id=sclmenu><A href="../SanPham/Index"><FONT size=3>TRANG CHỦ</FONT> 
+</A>&nbsp; | &nbsp; 
+<DIV style="DISPLAY: inline" id=mnSanpham><A 
+href="../Other/HDMuaHang">HƯỚNG DẪN</A>&nbsp;</DIV>
+|&nbsp; 
+<DIV style="DISPLAY: inline" id=mnNews><A href="../Other/GioiThieu">GIỚI THIỆU</A>&nbsp;</DIV>
+&nbsp;|&nbsp; 
+<A href="../Other/LienHe">LIÊN HỆ</A>&nbsp; |&nbsp; <IMG border=0 
+align=absMiddle src="../Content/images/beach_chair_48.png" height=22></DIV>
+
+</div><div id='FooterInfo'><FONT size=2><DIV style="POSITION: absolute; TOP: -8299px"></DIV>
+<STRONG><FONT size=3>POWER OF SHOES SHOP</FONT> - <FONT size=3><STRONG><SPAN 
+style="FONT-FAMILY: Tahoma; COLOR: blue">273 </SPAN></STRONG>An Dương Vương Q.5</FONT></STRONG> - &nbsp;<BR>ĐT: 0909696969 - Email: </FONT><A 
+href="mailto:secminh@gmail.com"><FONT 
+size=2>secminh@gmail.com</FONT></A><FONT size=2> - Website:</FONT><A 
+target=_blank> www.posshop.com</FONT></A> 
+<P></P>
+<P align=center><FONT size=1>Copyright © 2015 - 2016 </FONT></P>
+
+<DIV style="POSITION: absolute; TOP: -8599px" align=center> </DIV>
+</div></div>
 
 </body>
+
+
+    </div>
+ 
+
+</body>
+
 </html>
