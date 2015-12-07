@@ -1,0 +1,118 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script>
+    function checkpass() {
+        var x = document.getElementById("mainForm");
+        if ((x.Pass.value != x.Pass2.value) || (x.Pass.value + x.Pass2.value == "")) {
+            //alert("Password does not match!");
+            document.getElementById("mk2").innerHTML = "(Nhập lại mật khẩu!)";
+            x.Pass = "";
+            x.Pass2.value = "";
+            return false;
+        }
+        else {
+            document.getElementById("mk2").innerHTML = "";
+        }
+        return true;
+    }
+
+    function check_Number(e) {
+        var unicode = e.keyCode;
+        if (unicode != 8) {
+            if (unicode < 48 || unicode > 57) {
+                return false;
+            }
+        }
+    }
+    function Checkname() {
+        if (document.mainForm.name.value.length == 0) {
+            document.getElementById('sao').innerHTML = "Phải nhập tên truy nhập!";
+            return false;
+        }
+        else {
+            document.getElementById("sao").innerHTML = "";
+        }
+        if (document.mainForm.name.value.length < 3) {
+            document.getElementById('sao').innerHTML = "Phải có ít nhất 3 kí tự!";
+            return false;
+        }
+        else {
+            document.getElementById("sao").innerHTML = "";
+        }
+
+
+        return true;
+    }
+
+</script>
+<div id="mainContent">
+    <div id='Para'>
+        <div id='pTitle' class='PTitle'>
+            Đăng Ký Thành Viên
+
+        </div><div id='pContent'>
+            <table width="699" height="155" border="0">
+                @using (Html.BeginForm("DangKyUser", "User", FormMethod.Post, new { id = "mainForm", name = "mainForm", onSubmit = "" }))
+                {
+                    <tr>
+                        <th width="388" scope="row"><div align="right">Username</div></th>
+                        @if (ViewBag.ThongTinUsr != null)
+                        {
+                            <td width="295"><input onchange="Checkname();" name="User" style="width: 252px" type="text" value="@ViewBag.ThongTinUsr.IDUser" />&nbsp;</td>
+                        }
+                        else
+                        {
+                            <td width="295"><input onchange="Checkname();" name="User" style="width: 252px" type="text" value="" />&nbsp;</td>
+                        }
+                        <span id="sao" style="color:#FF0000">@Html.Raw(ViewBag.Mess)</span>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Password</div></th>
+                        <td>
+                            <input name="Pass" style="width: 252px" type="password" value="" />&nbsp;
+                            <span id="mk" style="color:#FF0000"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Nhập Lại Password</div></th>
+                        <td>
+                            <input name="Pass2" style="width: 252px" type="password" value="" onchange="checkpass();" />&nbsp;
+                            <p><span id="mk2" style="color:#FF0000"></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Họ tên đầy đủ</div></th>
+                        <td><input name="Fullname" style="width: 252px" type="text" value="" />&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Địa chỉ</div></th>
+                        <td><input name="DiaChi" style="width: 252px" type="text" value="" />&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="height: 25px"><div align="right">Điện thoại</div></th>
+                        <td style="height: 25px">
+                            <input name="Dienthoai" style="width: 252px" type="text" ma maxlength="11" onkeydown="return check_Number(event)" value="" />&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Ngày Sinh </div></th>
+                        <td><input name="Ngaysinh" style="width: 252px" type="text" value="" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Email</div></th>
+                        <td><input name="Email" style="width: 252px" type="text" value="" />&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><div align="right"><input name="dangky" type="submit" value="Đăng Ký" /></div></th>
+                        <td><a href="../SanPham/Index"><input name="Cancel" type="button" value="Hủy" /></a></td>
+                    </tr>
+                }
+            </table>
+
+            <p>&nbsp;</p>
+            <div class='tnp'></div>
+        </div><div id='pBot'></div>
+    </div>
+</div>

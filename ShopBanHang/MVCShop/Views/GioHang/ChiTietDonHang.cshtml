@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "ChiTietDonHang";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="mainContent">
+    <div id='Para'>
+        <div id='pTitle' class='PTitle'>Chi Tiết Đơn Hàng:</div><div id='pContent'>
+
+
+
+
+            <table width="711" border="1">
+                <tr>
+
+
+                    <th scope="col">Mã Đơn Hàng </th>
+                    <th scope="col">Tên Sản Phẩm</th>
+
+                    <th scope="col">Số Lượng</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Thành Tiền</th>
+
+                </tr>
+
+
+                @foreach (var p in MVCKLShop.Models.MySession.ChiTietDonHang)
+                {
+                    <tr>
+
+
+                        <td>@Html.DisplayFor(item => p.MaDonHang).ToString().Trim()</td>
+                        <td>@Html.DisplayFor(item => p.TenSP).ToString().Trim()</td>
+
+                        <td>@Html.DisplayFor(item => p.SoLuong).ToString().Trim()</td>
+                        <td>
+                            @Html.DisplayFor(item => p.Gia).ToString().Trim()
+                        </td>
+                        <td>
+                            @Html.DisplayFor(item => p.ThanhTien).ToString().Trim()
+                        </td>
+
+
+                    </tr>
+                }
+            </table>
+            <p>
+
+            </p>
+            <div class='tnp'></div>
+        </div><div id='pBot'></div>
+    </div>
+</div>

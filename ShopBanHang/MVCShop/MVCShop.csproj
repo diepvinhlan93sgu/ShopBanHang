@@ -38,7 +38,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
@@ -50,6 +70,34 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -57,11 +105,268 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\App_Themes\Default\StyleSheet.css" />
+    <Content Include="Content\App_Themes\images\bg-config.html" />
+    <Content Include="Content\App_Themes\images\bg-header-repeat.html" />
+    <Content Include="Content\App_Themes\images\bg-header.html" />
+    <Content Include="Content\App_Themes\images\bg-page.html" />
+    <Content Include="Content\App_Themes\images\bt-apply-over.html" />
+    <Content Include="Content\App_Themes\images\bt-apply.html" />
+    <Content Include="Content\App_Themes\images\bt-config.html" />
+    <Content Include="Content\App_Themes\images\bt-download-helper.html" />
+    <Content Include="Content\App_Themes\images\bt-download-stable.html" />
+    <Content Include="Content\App_Themes\images\bt-download-wp.html" />
+    <Content Include="Content\App_Themes\images\bt-lang.html" />
+    <Content Include="Content\App_Themes\images\bt-up.html" />
+    <Content Include="Content\App_Themes\images\focus-button.html" />
+    <Content Include="Content\App_Themes\images\logo-thiago.html" />
+    <Content Include="Content\App_Themes\images\logo.html" />
+    <Content Include="Content\App_Themes\images\pause-button.html" />
+    <Content Include="Content\App_Themes\images\play-button.html" />
+    <Content Include="Content\App_Themes\images\sexy-sprite.html" />
+    <Content Include="Content\App_Themes\images\sharing-caring.html" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ImageSP\10383960_827180923979508_6964296044144124426_n.jpg" />
+    <Content Include="Content\ImageSP\10403717_912711088744100_5902782929723063043_n.jpg" />
+    <Content Include="Content\ImageSP\10685608_344795105692304_1991778724333177985_n.jpg" />
+    <Content Include="Content\ImageSP\10730946_778231242247767_2801810811740548454_n.jpg" />
+    <Content Include="Content\ImageSP\1625584_684968054888473_2145918616_n.jpg" />
+    <Content Include="Content\ImageSP\601123_10151467594928948_404844865_n.jpg" />
+    <Content Include="Content\ImageSP\banbongban.gif" />
+    <Content Include="Content\ImageSP\BangBaoThayNguoi.jpg" />
+    <Content Include="Content\ImageSP\bang_bong_ro.jpg" />
+    <Content Include="Content\ImageSP\bc.png" />
+    <Content Include="Content\ImageSP\bca.png" />
+    <Content Include="Content\ImageSP\CoTrongTaBien.jpg" />
+    <Content Include="Content\ImageSP\dantadanang.jpg" />
+    <Content Include="Content\ImageSP\ghecombokhongtualung.jpg" />
+    <Content Include="Content\ImageSP\GheTapTayTruoc.jpg" />
+    <Content Include="Content\ImageSP\luoibongrothidau.jpg" />
+    <Content Include="Content\Images\ajax-loader.gif" />
+    <Content Include="Content\Images\Banner.jpg" />
+    <Content Include="Content\Images\Banner1.jpg" />
+    <Content Include="Content\Images\Banner2.jpg" />
+    <Content Include="Content\Images\beach_chair_48.png" />
+    <Content Include="Content\Images\bg_color.gif" />
+    <Content Include="Content\Images\blue\bn_bg.jpg" />
+    <Content Include="Content\Images\blue\bn_full.jpg" />
+    <Content Include="Content\Images\blue\bn_left.jpg" />
+    <Content Include="Content\Images\blue\bn_mid.jpg" />
+    <Content Include="Content\Images\blue\bn_right.jpg" />
+    <Content Include="Content\Images\blue\body_bgT.png" />
+    <Content Include="Content\Images\blue\Footer_bg.jpg" />
+    <Content Include="Content\Images\blue\mName_arrow.jpg" />
+    <Content Include="Content\Images\blue\mnBox_bot.jpg" />
+    <Content Include="Content\Images\blue\mnBox_mid.jpg" />
+    <Content Include="Content\Images\blue\mnBox_top.jpg" />
+    <Content Include="Content\Images\blue\mnLeft_bot.jpg" />
+    <Content Include="Content\Images\blue\mnLeft_content.jpg" />
+    <Content Include="Content\Images\blue\mnLeft_item.jpg" />
+    <Content Include="Content\Images\blue\mnLeft_top.jpg" />
+    <Content Include="Content\Images\blue\pd_bottom.jpg" />
+    <Content Include="Content\Images\blue\pd_mid.jpg" />
+    <Content Include="Content\Images\blue\pd_top.jpg" />
+    <Content Include="Content\Images\blue\prCty.png" />
+    <Content Include="Content\Images\blue\prFPT.png" />
+    <Content Include="Content\Images\blue\prKM.jpg" />
+    <Content Include="Content\Images\blue\prVM.png" />
+    <Content Include="Content\Images\blue\p_title_bg.jpg" />
+    <Content Include="Content\Images\blue\p_title_full.jpg" />
+    <Content Include="Content\Images\blue\p_title_full2.jpg" />
+    <Content Include="Content\Images\blue\p_title_full4.jpg" />
+    <Content Include="Content\Images\CARD_baoda2.gif" />
+    <Content Include="Content\Images\DEFAULT\mnTop.html" />
+    <Content Include="Content\Images\gift_icon.gif" />
+    <Content Include="Content\Images\icon_back.gif" />
+    <Content Include="Content\Images\icon_mark.gif" />
+    <Content Include="Content\Images\icon_print.gif" />
+    <Content Include="Content\Images\i_3dx.gif" />
+    <Content Include="Content\Images\i_tubeX.gif" />
+    <Content Include="Content\Images\logoM.png" />
+    <Content Include="Content\Images\next.png" />
+    <Content Include="Content\Images\prev.png" />
+    <Content Include="Content\Images\Red\dot_button.html" />
+    <Content Include="Content\Images\Red\iBack.html" />
+    <Content Include="Content\Images\Red\iTop.html" />
+    <Content Include="Content\Images\Red\Line_detail_o.html" />
+    <Content Include="Content\Images\Share\delicious_32.png" />
+    <Content Include="Content\Images\Share\digg_32.png" />
+    <Content Include="Content\Images\Share\facebook_32.png" />
+    <Content Include="Content\Images\Share\google_32.png" />
+    <Content Include="Content\Images\Share\hi5_32.png" />
+    <Content Include="Content\Images\Share\mixx_32.png" />
+    <Content Include="Content\Images\Share\myspace_32.png" />
+    <Content Include="Content\Images\Share\twitter_32.png" />
+    <Content Include="Content\Images\Share\VOX_32.png" />
+    <Content Include="Content\Images\Share\yahoobuzz_32.png" />
+    <Content Include="Content\Images\space.gif" />
+    <Content Include="Content\JS\CS\vbulletin_important.css" />
+    <Content Include="Content\JS\Disable.js" />
+    <Content Include="Content\JS\highlight.js" />
+    <Content Include="Content\JS\highslide\graphics\close.png" />
+    <Content Include="Content\JS\highslide\graphics\closeX.png" />
+    <Content Include="Content\JS\highslide\graphics\controlbar-black-border.gif" />
+    <Content Include="Content\JS\highslide\graphics\controlbar-text-buttons.png" />
+    <Content Include="Content\JS\highslide\graphics\controlbar-white-small.gif" />
+    <Content Include="Content\JS\highslide\graphics\controlbar-white.gif" />
+    <Content Include="Content\JS\highslide\graphics\fullexpand.gif" />
+    <Content Include="Content\JS\highslide\graphics\icon.gif" />
+    <Content Include="Content\JS\highslide\graphics\index.html" />
+    <Content Include="Content\JS\highslide\graphics\loader.white.gif" />
+    <Content Include="Content\JS\highslide\graphics\resize.gif" />
+    <Content Include="Content\JS\highslide\graphics\scrollarrows.png" />
+    <Content Include="Content\JS\highslide\highslide-full.js" />
+    <Content Include="Content\JS\highslide\highslide.css" />
+    <Content Include="Content\JS\jquery-1.6.3.min.js" />
+    <Content Include="Content\JS\jquery.animate-colors-min.js" />
+    <Content Include="Content\JS\jquery.easing.1.3.js" />
+    <Content Include="Content\JS\jquery.skitter.min.js" />
+    <Content Include="Content\JS\sexy-bookmarks-public.js" />
+    <Content Include="Content\JS\TNtips.js" />
+    <Content Include="Content\Qstyle.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\Uploads\Adver\02022012\News\2022101511.jpg" />
+    <Content Include="Content\Uploads\Adver\02112009\News\20112122558.gif" />
+    <Content Include="Content\Uploads\Adver\03082011\News\208314471.gif" />
+    <Content Include="Content\Uploads\Adver\08082011\News\2088215446.gif" />
+    <Content Include="Content\Uploads\Adver\08082011\News\208822311.jpg" />
+    <Content Include="Content\Uploads\Adver\08082011\News\208822720.jpg" />
+    <Content Include="Content\Uploads\Adver\20092010\News\20920115350.jpg" />
+    <Content Include="Content\Uploads\Adver\31072009\News\20731173542.gif" />
+    <Content Include="Content\Uploads\Adver\micro.gif" />
+    <Content Include="Content\Uploads\Adver\SLide1.jpg" />
+    <Content Include="Content\Uploads\Adver\SLide2.jpg" />
+    <Content Include="Content\Uploads\Adver\SLide3.jpg" />
+    <Content Include="Content\Uploads\Mobile\01122011\News\2012115743.jpg" />
+    <Content Include="Content\Uploads\Mobile\01122011\News\2012115749.jpg" />
+    <Content Include="Content\Uploads\Mobile\01122011\News\2012115759.jpg" />
+    <Content Include="Content\Uploads\Mobile\01\iPhone-4-16GB.jpg" />
+    <Content Include="Content\Uploads\Mobile\01\iPhone-4-16GB_.jpg" />
+    <Content Include="Content\Uploads\Mobile\01\SE-Vivaz-pro.jpg" />
+    <Content Include="Content\Uploads\Mobile\01\SE-Vivaz-pro_.jpg" />
+    <Content Include="Content\Uploads\Mobile\02052011\News\2052123545.jpg" />
+    <Content Include="Content\Uploads\Mobile\02052011\News\2052123659.jpg" />
+    <Content Include="Content\Uploads\Mobile\02052011\News\205212367.jpg" />
+    <Content Include="Content\Uploads\Mobile\08052012\News\2058142232.jpg" />
+    <Content Include="Content\Uploads\Mobile\08052012\News\2058142241.jpg" />
+    <Content Include="Content\Uploads\Mobile\08052012\News\2058142254.jpg" />
+    <Content Include="Content\Uploads\Mobile\08052012\News\2058142313.jpg" />
+    <Content Include="Content\Uploads\Mobile\08052012\News\2058154023.jpg" />
+    <Content Include="Content\Uploads\Mobile\08052012\News\2058154034.jpg" />
+    <Content Include="Content\Uploads\Mobile\08052012\News\2058154049.jpg" />
+    <Content Include="Content\Uploads\Mobile\08052012\News\205815410.jpg" />
+    <Content Include="Content\Uploads\Mobile\09032012\News\2039115633.jpg" />
+    <Content Include="Content\Uploads\Mobile\09032012\News\2039115640.jpg" />
+    <Content Include="Content\Uploads\Mobile\09032012\News\203911575.jpg" />
+    <Content Include="Content\Uploads\Mobile\14042011\News\20414112415.jpg" />
+    <Content Include="Content\Uploads\Mobile\14042011\News\20414112454.jpg" />
+    <Content Include="Content\Uploads\Mobile\16022011\News\2021613192.jpg" />
+    <Content Include="Content\Uploads\Mobile\16022011\News\2021613199.jpg" />
+    <Content Include="Content\Uploads\Mobile\17022012\News\20217162557.jpg" />
+    <Content Include="Content\Uploads\Mobile\17022012\News\2021716265.jpg" />
+    <Content Include="Content\Uploads\Mobile\21042012\News\20421112346.jpg" />
+    <Content Include="Content\Uploads\Mobile\21042012\News\20421112355.jpg" />
+    <Content Include="Content\Uploads\Mobile\21042012\News\2042112830.jpg" />
+    <Content Include="Content\Uploads\Mobile\21042012\News\2042112841.jpg" />
+    <Content Include="Content\Uploads\Mobile\21042012\News\2042112858.jpg" />
+    <Content Include="Content\Uploads\Mobile\ipad2\apple-ipad2b.jpg" />
+    <Content Include="Content\Uploads\Mobile\ipad2\apple-ipad2L.jpg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Service References\ServiceReferenceCTDonHangCustom\MVCShop.ServiceReferenceCTDonHangCustom.CTDonHangCustom.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Service References\ServiceReferenceCTDonHangCustom\ServiceCTDonHangCustom.wsdl" />
     <None Include="Service References\ServiceReferenceCTDonHangCustom\ServiceCTDonHangCustom.xsd">
       <SubType>Designer</SubType>
@@ -124,6 +429,28 @@
     <None Include="Service References\ServiceReferenceUser\ServiceUser2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\web.config" />
+    <Content Include="Views\GioHang\Index.cshtml" />
+    <Content Include="Views\GioHang\Menugiohang.cshtml" />
+    <Content Include="Views\GioHang\LichSuGioHang.cshtml" />
+    <Content Include="Views\GioHang\ChiTietDonHang.cshtml" />
+    <Content Include="Views\Other\BaoHanh.cshtml" />
+    <Content Include="Views\Other\GioiThieu.cshtml" />
+    <Content Include="Views\Other\HDMuaHang.cshtml" />
+    <Content Include="Views\Other\LienHe.cshtml" />
+    <Content Include="Views\PhanTrang\PhanTrang.cshtml" />
+    <Content Include="Views\SanPham\Index.cshtml" />
+    <Content Include="Views\SanPham\DanhMucSP.cshtml" />
+    <Content Include="Views\SanPham\ChiTietSP.cshtml" />
+    <Content Include="Views\SanPham\KQTimKiem.cshtml" />
+    <Content Include="Views\SanPham\SanPhamTheoLoai.cshtml" />
+    <Content Include="Views\SanPham\TimKiem.cshtml" />
+    <Content Include="Views\User\DangKy.cshtml" />
+    <Content Include="Views\User\DangNhap.cshtml" />
+    <Content Include="Views\User\EditUser.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -170,6 +497,22 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
+    <Compile Include="Controllers\OtherController.cs" />
+    <Compile Include="Controllers\PhanTrangController.cs" />
+    <Compile Include="Controllers\SanPhamController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietDonHang.cs" />
+    <Compile Include="Models\MySession.cs" />
+    <Compile Include="Models\MySession1.cs" />
+    <Compile Include="Models\Products.cs" />
+    <Compile Include="Models\Products1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ServiceReferenceCTDonHangCustom\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -198,7 +541,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\ImageSP\" />
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

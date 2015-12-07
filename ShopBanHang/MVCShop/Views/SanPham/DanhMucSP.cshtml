@@ -1,0 +1,7 @@
+﻿@model IEnumerable<MVCShop.ServiceReferenceDanhMucSP.DanhMucSP>
+@foreach (var item in Model)
+{
+
+    <div id='mnLeftItem' class='mnLeftItem'><a href="../SanPham/SanPhamTheoLoai?loai=@Html.DisplayFor(q => item.MaDM).ToString().Trim()">@Html.DisplayFor(q => item.TenDM)</a></div>
+
+}

@@ -1,0 +1,109 @@
+﻿@{
+
+    ViewBag.Title = "Index";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Qstyle.css" rel="stylesheet" />
+<div id="mainContent">
+    <div id='Para'>
+        <div id='pTitle' class='PTitle'>Sản Phẩm Trong Giỏ Hàng</div>
+        <div id='pBot'></div>
+        <div id="ctl00_MainContentHolder_pnlWholeCart">
+            <div id="cartcontainer">
+                <div>
+                    <table id="ctl00_MainContentHolder_ItemGridView" class="cartproductgrid" border="0" style="width:100%; border-collapse:collapse; color:black; margin: 15px auto;">
+                        <tbody>
+                            <tr>
+                                <th align="left" scope="col">Tên sản phẩm</th>
+                                <th align="left" scope="col">Giá</th>
+                                <th style="width:60px;" align="left" scope="col">Số lượng</th>
+                                <th style="padding-left:20px;" align="left" scope="col">Tổng tiền</th>
+                                <th scope="col"> </th>
+                            </tr>
+                            @foreach (var item in MVCKLShop.Models.MySession.GioHang)
+                            {
+                                <tr style="height:10px;"></tr>
+                                <tr>
+                                    @*<td class="productimagecolumn" valign="top">
+                                            <div class="cartitemimage">
+                                                <img id="ctl00_MainContentHolder_ItemGridView_ctl02_imgProduct" style="border-width:0px;" alt="Diamondback Sound Pedal ABC 39" src="/Images/products/pedal4-s.jpg">
+                                            </div>
+                                        </td>*@
+                                    <td style="width:250px;" class="productdetailscolumn" valign="top">
+                                        <div id="ctl00_MainContentHolder_ItemGridView_ctl02_cartitemdescription" class="cartitemdescription">
+                                            <a id="ctl00_MainContentHolder_ItemGridView_ctl02_DescriptionLinkButton" href="#">
+                                                @*<div class="cartproductname">@SHOPPING.Models.MySession.GioHang[0].TenSanPham</div>*@
+                                                <div class="cartproductname">@Html.DisplayFor(m => item.TenSanPham)</div>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td style="width:150px;" class="productpricecolumn" valign="top">
+                                        <span class="cartproductprice">@Html.DisplayFor(m => item.Gia)</span>
+                                    </td>
+                                    <td style="width:5px;" class="productquantitycolumn" valign="top">
+                                        <div style="width:5px;">
+                                            @*<input id="ctl00_MainContentHolder_ItemGridView_ctl02_QtyField" type="text" style="width:50px;" value="@Html.DisplayFor(m => item.SoLuong)" name="ctl00$MainContentHolder$ItemGridView$ctl02$QtyField">*@
+
+                                            @using (Html.BeginForm("UpdateCart", "GioHang", "Index"))
+                                            {
+                                                <form method="post" class="form">
+                                                    @Html.TextBox("USoLuong", @Html.DisplayFor(m => item.SoLuong), new { @Style = "width:64px;" })
+                                                    @Html.TextBox("UMaSanPham", @Html.DisplayFor(m => item.MaSanPham), new { @Type = "hidden" })
+
+                                                    <input type="submit" style="border-width:0px; cursor:pointer;" value="Cập nhật">
+
+                                                </form>
+                                            }
+                                        </div>
+                                    </td>
+                                    <td style="padding-left:20px; width: 160px;" class="producttotalcolumn" valign="top">
+                                        <span class="lineitemnodiscounts"></span>
+                                        <span class="totallabel">@Html.DisplayFor(m => item.TongTien)</span>
+                                    </td>
+                                    <td class="productdeletecolumn" valign="top">
+                                        <a href="../GioHang/DeleteCart/@Html.DisplayFor(m => item.MaSanPham)">
+                                            <input id="ctl00_MainContentHolder_ItemGridView_ctl02_btnDelete" type="image" style="border-width:0px;" alt="Delete" src="../../images/x.png" name="btnDelete">
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--Cat xuong duoi-->
+        </div>
+        <div class="cartfooter">
+            <div id="carttotals">
+                <table cellspacing="0" cellpadding="3" border="0">
+                    <tbody>
+                        <tr>
+                            <td class="formlabel"> <b>Tổng Số Tiền Đã Mua Hàng :  </b> </td>
+                            <td class="formfield">
+                                <span id="ctl00_MainContentHolder_lblSubTotal">@MVCKLShop.Models.MySession.TongTien VNĐ</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="formlabel"> <b>Xác Nhận Thanh Toán  </b> </td>
+                            <td class="formfield">
+                                @using (Html.BeginForm("Payment", "GioHang", new { tongtien = MVCKLShop.Models.MySession.TongTien }))
+                                {
+                                    <span id="ctl00_MainContentHolder_lblSubTotal"> <input type="submit" name="thanhtoan" value="Thanh Toán" /> </span>
+                                }
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p></p>
+    </div>
+</div>

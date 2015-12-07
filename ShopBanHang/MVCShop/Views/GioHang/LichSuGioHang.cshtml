@@ -1,0 +1,70 @@
+﻿@model IEnumerable<MVCShop.ServiceReferenceDatHang.DonHang>
+@{
+    ViewBag.Title = "LichSuGioHang";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="mainContent">
+    <div id='Para'>
+        <div id='pTitle' class='PTitle'>Các Đơn Hàng Đã Đặt:</div><div id='pContent'>
+
+
+
+
+            <table width="711" border="1">
+                <tr>
+
+
+                    <th scope="col">Mã Đơn Hàng </th>
+
+
+                    <th scope="col">Ngày Đặt Hàng</th>
+                    <th scope="col">Trị Giá Đơn Hàng</th>
+                    <th scope="col">Trạng Thái Của Đơn Hàng</th>
+
+                </tr>
+
+
+                @foreach (var p in Model)
+                {
+                    <tr>
+
+
+                        <td>@Html.DisplayFor(item => p.MaDonHang).ToString().Trim()</td>
+
+
+                        <td>@Html.DisplayFor(item => p.Ngay).ToString().Trim()</td>
+                        <td>
+                            @Html.DisplayFor(item => p.TriGiaDH).ToString().Trim()
+                        </td>
+
+                        @if (Html.DisplayFor(item => p.MaTrangThai).ToString().Trim() == "1")
+                        {
+                            <td>  Đã Giao Hàng</td>
+                        }
+                        else
+                        {
+                            <td> Chưa Giao Hàng</td>
+                        }
+
+                        <td>
+                            @using (Html.BeginForm("ChiTietDonHang", "GioHang", new { madonhang = @Html.DisplayFor(item => p.MaDonHang).ToString().Trim() }))
+                            {
+                                <input name="ctdh" type="submit" value="Chi Tiết Đơn Hàng" />
+                            }
+                        </td>
+
+                    </tr>
+                }
+            </table>
+            <p>
+                <div>@{Html.RenderAction("PhanTrang", "PhanTrang", new { currentpage = "GioHang/LichSuGioHang?", totalpages = ViewBag.TotalPages });} </div>
+                <div style="text-align:right; padding:6px; color:#FF3333; font-size:14px; height:22px"><a href="#top">>>Về đầu trang</a></div>
+            </p>
+            <div class='tnp'></div>
+        </div><div id='pBot'></div>
+    </div>
+</div>

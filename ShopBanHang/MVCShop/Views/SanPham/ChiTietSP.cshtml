@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "ChiTietSP";
+}
+@model IEnumerable<MVCShop.ServiceReferenceSanPham.SanPham
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="mainContent">
+    <div id='Para'>
+
+        <div id='pTitle' class='PTitle'>Chi Tiết Sản Phẩm</div><div id='pdTitle' class='PdTitle'>
+            <div class='PTitleDe'>@Html.DisplayFor(p => p.TenSP).ToString().Trim() &nbsp;  &nbsp;</div>
+        </div><div id='pdContent'>
+            <table width=99% cellpadding=0 cellspacing=0>
+                <tr valign=top>
+                    <td width=190 align=center>
+                        <table width=190 cellpadding=0 callspcing=0>
+                            <tr valign=top><td width=190 align=center><div class='highslide-gallery' style='text-align:center;'><a><img src="../Content/ImageSP/@Html.DisplayFor(p => p.HinhAnh).ToString().Trim()" width='200' title='Phóng lớn hình' alt='Phóng lớn hình' border='0'></a><div class='highslide-heading'></div></div></td></tr>
+                            <tr>
+                                <td>
+                                    <div id='mPrice' align='center'>
+                                        <div id='price2'>Giá: @Html.DisplayFor(p => p.Gia).ToString().Trim()</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <td>
+                                <div id='mPrice' align='center'>
+                                    <div id='price2'>
+                                        <script>
+                                        function dathang() {
+                                            alert('Bạn phải đăng nhập với sử dụng được chức năng này');
+                                        }
+                                        </script> <input type="submit" name="dathang" id="dathang" value="Đặt Hàng" onclick="                                            return dathang();" />
+                                    </div>
+                                </div>
+                            </td>
+                        </table>
+                    </td>
+                    <td style='padding-left:5px;'>
+                        <table width=99% cellpadding=0 cellspacing=0>
+                            <tr>
+                                <td width='25%' align=left style='padding:3px;border-bottom:1px solid #EAEAEA'><strong>Kích Thước</strong></td>
+                                <td align=left style='padding:3;border-bottom:1px solid #EAEAEA'>@Html.DisplayFor(p => p.KichThuoc).ToString().Trim()</td>
+                            </tr>
+                            <tr>
+                                <td align=left style='padding:3px;border-bottom:1px solid #EAEAEA'><strong>Màu Sắc</strong></td>
+                                <td align=left style='padding:3;border-bottom:1px solid #EAEAEA'>@Html.DisplayFor(p => p.MauSac).ToString().Trim()</td>
+                            </tr>
+                            <tr>
+                                <td align=left style='padding:3px;border-bottom:1px solid #EAEAEA'><strong>Số Lượng</strong></td>
+                                <td align=left style='padding:3;border-bottom:1px solid #EAEAEA'>@Html.DisplayFor(p => p.SoLuong).ToString().Trim()</td>
+                            </tr>
+                            <tr>
+                                <td align=left style='padding:3px;border-bottom:1px solid #EAEAEA'>&nbsp;</td>
+                                <td align=left style='padding:3;border-bottom:1px solid #EAEAEA'>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table><div class='tnp'></div>
+
+            <table width="704" height="386" border="0">
+                <tr>
+                    <td height="380" align="left" valign="top"><p><div class='PTitleDe'>Mô Tả Sản Phẩm:</div></p><p> @Html.DisplayFor(p => p.MoTa).ToString().Trim()<br /></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id='pdBot'></div>
+    </div><div style='padding-left:5px;text-align:center;'></div><div id='pBot'></div>
+
+</div></div>
+

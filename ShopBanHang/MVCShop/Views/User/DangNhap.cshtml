@@ -1,0 +1,116 @@
+﻿
+<script>
+    function ktthoat() {
+        if (confirm('Bạn có chắc là muốn thoát'))
+            return true;
+        else
+            return false;
+    }
+</script>
+@if (Request.IsAuthenticated)
+{
+    Session["User"] = @Html.Encode(User.Identity.Name);
+
+    // Session["Quyen"] = @Html.DisplayFor(p => p.Quyen).ToString().Trim());
+    <div id='mnLeftTop' class='mnLeftTitle'>Đăng Nhập</div>
+
+
+
+
+    <div id='mnLeftContent'>
+        <div align=left>
+            &nbsp;
+            <table border="0" style="width: 157px; height: 42px">
+                <tr>
+                    <td width="34">&nbsp;</td>
+                    <td width="107" style="width: 75px">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td style="width: 75px">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="style1">
+                        <p>Bạn Đã đăng nhập với tên:</p>
+                        <p><strong>@Html.Encode(User.Identity.Name)</strong></p>
+                        <p><a href="../User/EditUser">Chỉnh sửa User</a></p>
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="style1">
+                        <script>
+                            function ktthoat() {
+                                if (confirm('Bạn có chắc là muốn thoát'))
+                                    return true;
+                                else
+                                    return false;
+                            }
+                        </script>
+                        @using (Html.BeginForm("LogOff", "User", new { onSubmit = "ktthoat();" }))
+                        {<input type="submit" name="thoat" id="thoat" value="Thoát" />}
+                    </td>
+                </tr>
+            </table>
+            <font color=#ff0000>
+                <br>
+            </font>
+        </div>
+    </div>
+
+}
+else
+{
+    <div id='mnLeftTop' class='mnLeftTitle'>Đăng Nhập</div>
+    <div id='mnLeftContent'>
+        <div align=left>
+            &nbsp;
+            <table border="0" style="width: 157px; height: 42px">
+                @using (Html.BeginForm("Login", "User", FormMethod.Post, new { id = "Formdn", name = "Formdn", onSubmit = "" }))
+                {
+                    <tr>
+                        <td width="34">User:</td>
+                        <td width="107" style="width: 75px">
+
+                            <input type="text" name="user" id="user" style="width: 118px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pass:</td>
+                        <td style="width: 75px">
+                            <input type="password" name="pass" id="pass" style="width: 117px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="style1">
+                            <span class="style11">
+
+                            </span>
+                            <input type="submit" name="dangnhap" id="dangnhap" value="Đăng Nhập" />
+                        </td>
+                    </tr>
+                }
+                <tr>
+
+                    <td colspan="2" class="style1"> <a href="../User/DangKy"><input type="button" name="dangnhap2" id="dangnhap2" value="Đăng Ký" /></a></td>
+
+                </tr>
+            </table>
+            <font color=#ff0000>
+                <br>
+            </font>
+
+        </div>
+    </div>
+}
+
+
+
+
+
+
+
+
+<div id='mnLeftBot'></div>
+@Html.Raw(ViewBag.Error)
+

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<MVCShop.ServiceReferenceSanPham.SanPham>
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="mainContent">
+    <div id='Para'>
+        <div id='pTitle' class='PTitle'>Kết Quả Tìm Kiếm</div>
+        @if (Model.Count() < 1)
+        {
+            <div id='pContent'>
+                Kết quả tìm kiếm với từ khóa: <p><b>@Html.Raw(ViewBag.Tensp)</b></p><br /><br />
+                <b>@Html.Raw(ViewBag.KhongTimThay)</b>
+            </div>
+        }
+        else
+        {
+
+            <div id='pContent'>
+                Kết quả tìm kiếm với từ khóa: <p><b>@Html.Raw(ViewBag.Tensp)</b></p>
+                <p>    </p>
+                @foreach (var p in Model)
+                {
+                    <div id='mItem'>
+
+                        <div id='mName' class='mName'><a href="../SanPham/ChiTietSP?Masp=@Html.DisplayFor(item => p.MaSP).ToString().Trim()">@Html.DisplayFor(item => p.TenSP).ToString().Trim()</a>    </div>
+                        <div id='mIMG'><a href="../SanPham/ChiTietSP?Masp=@Html.DisplayFor(item => p.MaSP).ToString().Trim()"><img src="../Content/ImageSP/@Html.DisplayFor(item => p.HinhAnh).ToString().Trim()" alt='' title='' border='0'></a></div>
+                        <div id='mIntro'><div id='price2'>Giá: @Html.DisplayFor(item => p.Gia).ToString().Trim()</div></div>
+                        <p><br />
+                        <p>&nbsp;</p>
+                        @if (Request.IsAuthenticated)
+                        {
+                            <div id='mIntro'>
+                                <div id='mFunc'>
+                                    <div id='price2'>
+                                        <p class="button">
+                                            @Html.ActionLink("Đặt Hàng", "AddToCart",
+                "GioHang", new { id = (Html.DisplayFor(item => p.MaSP).ToString().Trim()) }, "")
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div id='mIntro'>
+                                <div id='mFunc'>
+                                    <div id='price2'>
+                                        <a href="" onclick="alert('Bạn phải đăng nhập để mua hàng!');"> <input type="button" name="dathang" id="dathang" value="Đặt Hàng" /> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        <br />
+                        </p>
+                        <p></p>
+                        <p>&nbsp;</p>
+
+                    </div>
+                }
+            </div>
+
+
+            <div class='tnp'>
+                <p>
+                    <div>@{Html.RenderAction("PhanTrang", "PhanTrang", new { currentpage = "SanPham/Index?", totalpages = ViewBag.TotalPages });} </div>
+                    <div style="text-align:right; padding:6px; color:#FF3333; font-size:14px; height:22px"><a href="#top">>>Về đầu trang</a></div>
+                </p>
+
+            </div>
+        }
+    </div>
+</div>
+    

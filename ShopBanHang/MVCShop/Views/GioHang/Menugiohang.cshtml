@@ -1,0 +1,49 @@
+﻿
+
+<div align=left>
+    &nbsp;
+    @if (Request.IsAuthenticated)
+    {
+
+        <table border="0" style="width: 157px; height: 42px">
+            <tr>
+                <td width="34">&nbsp;</td>
+                <td width="107" style="width: 75px">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="style1">
+                    Giỏ hàng: @Session[MVCShop.Models.MySession.TongSL]  sản phẩm
+                    (@Html.ActionLink("Xem giỏ", "Index", "GioHang"))
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="style1">
+                    <a href="../GioHang/LichSuGioHang">Chi Tiết Đơn Hàng </a>
+                </td>
+            </tr>
+
+        </table>
+
+    }
+    else
+    {
+        <table border="0" style="width: 157px; height: 42px">
+            <tr>
+                <td width="34">&nbsp;</td>
+                <td width="107" style="width: 75px">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="style1">
+                    Bạn cần đăng nhập để sử dụng chức năng giỏ hàng
+                </td>
+            </tr>
+
+        </table>
+    }
+    <font color=#ff0000>
+        <br>
+    </font>
+</div>
+<div align=center>
+
+</div><div class='tn1'></div>

@@ -1,0 +1,68 @@
+﻿@model MVCShop.ServiceReferenceUser.User
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script>
+    function check_Number(e) {
+        var unicode = e.keyCode;
+        if (unicode != 8) {
+            if (unicode < 48 || unicode > 57) {
+                return false;
+            }
+        }
+    }
+
+</script>
+<div id="mainContent">
+    <div id='Para'>
+        <div id='pTitle' class='PTitle'>
+            Sửa Thông Tin Thành Viên
+
+        </div><div id='pContent'>
+            <table width="699" height="155" border="0">
+                @using (Html.BeginForm("Edit", "User", FormMethod.Post, new { id = "mainForm", name = "mainForm", onSubmit = "" }))
+                {
+                    <tr>
+                        <th width="388" scope="row"><div align="right">Username</div></th>
+
+                        <td width="295"><input name="User" style="width: 252px" readonly="readonly" type="text" value="@Model.IDUser" />&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Password</div></th>
+                        <td><input name="Pass" style="width: 252px" type="password" value="@Model.PassUser" />&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Họ tên đầy đủ</div></th>
+                        <td><input name="Fullname" style="width: 252px" type="text" value="@Model.HoTenUser" />&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Địa chỉ</div></th>
+                        <td><input name="DiaChi" style="width: 252px" type="text" value="@Model.DiaChi" />&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="height: 25px"><div align="right">Điện thoại</div></th>
+                        <td style="height: 25px">
+                            <input name="Dienthoai" style="width: 252px" type="text" ma maxlength="11" onkeydown="return check_Number(event)" value="@Model.SoDienThoai" />&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Ngày Sinh </div></th>
+                        <td><input name="Ngaysinh" style="width: 252px" type="text" value="@Model.Ngaysinh" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><div align="right">Email</div></th>
+                        <td><input name="Email" style="width: 252px" type="text" value="@Model.Email" />&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"><div align="right"><input name="save" type="submit" value="Cập Nhật" /></div></th>
+                        <td><a href="../SanPham/Index"><input name="Cancel" type="button" value="Hủy" /></a></td>
+                    </tr>
+                }
+            </table>
+
+            <p>&nbsp;</p>
+            <div class='tnp'></div>
+        </div><div id='pBot'></div>
+    </div>
+</div>

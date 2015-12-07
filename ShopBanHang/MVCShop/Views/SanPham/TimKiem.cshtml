@@ -1,0 +1,37 @@
+﻿
+<script type="text/javascript">
+    function kiemtra() {
+        if (document.tkcban.chuoitk.value.length == 0) {
+            alert('Bạn chưa nhập tên sản phẩm để tìm kiếm');
+            return false;
+        }
+        else {
+            var s = document.tkcban.chuoitk.value;
+            document.tkcban.chuoitk.value = s;
+            //document.location="../SanPham/KQTimKiem.cshtml?TimSP="+s;
+            //alert('s');
+        }
+
+    }
+</script>
+
+<p> </p>
+
+<p class="style1">
+    @using (Html.BeginForm("KQTimKiem", "SanPham", FormMethod.Post, new { id = "tkcban", name = "tkcban", onSubmit = "return kiemtra();" }))
+    {
+        <input type="text" name="chuoitk" id="chuoitk" style="width: 167px" />
+
+        <div align="center">
+            <input type="submit" name="tkcban" value="Tìm Kiếm" />
+        </div>
+        <input type="hidden" name="tim" value="" />
+
+    }
+</p>
+<p>&nbsp;</p>
+<p class="style1"><a href="../SanPham/TimKiemNangCao">Tìm Kiếm Nâng Cao</a></p>
+
+<p class="style1">&nbsp;</p>
+<p>&nbsp;</p>
+
