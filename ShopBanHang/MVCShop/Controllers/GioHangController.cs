@@ -218,7 +218,7 @@ namespace MVCShop.Controllers
             string chuoi = "";
 
 
-            chuoi += "Đơn đặt hàng của " + hoten + " tại KLShop " + "\n";
+            chuoi += "Đơn đặt hàng của " + hoten + " tại PosShop " + "\n";
             int tongtien1 = 0;
             foreach (var item in MySession.GioHang)
             {
@@ -226,17 +226,17 @@ namespace MVCShop.Controllers
                 tongtien1 += int.Parse(item.TongTien.ToString());
             }
             chuoi += "Tổng tiền:" + tongtien1 + "\n";
-            chuoi += "Đơn đặt hàng của " + hoten + " tại KLShop  đã được xác nhận" + "\n";
-            chuoi += "Chúng tôi sẽ giao hàng trong vòng 2-3 ngày" + "\n";
+            chuoi += "Đơn đặt hàng của " + hoten + " tại PosShop  đã được xác nhận" + "\n";
+            chuoi += "Chúng tôi sẽ giao hàng trong vòng 24h" + "\n";
             chuoi += "Trước khi giao hàng sẽ có nhân viên gọi điện trước 30p";
             MailMessage msg = new MailMessage();
-            msg.From = new MailAddress("sguklshop@gmail.com");
+            msg.From = new MailAddress("secminh@gmail.com");
             msg.To.Add(Email);
-            msg.Subject = "GIỎ HÀNG CỦA QUÝ KHÁCH TẠI KLShop";
+            msg.Subject = "GIỎ HÀNG CỦA QUÝ KHÁCH TẠI PosShop";
             msg.Body = chuoi;
 
             SmtpClient smtp = new SmtpClient();
-            smtp.Credentials = new NetworkCredential("sguklshop@gmail.com", "sguklshop123");
+            smtp.Credentials = new NetworkCredential("secminh@gmail.com", "themoment");
             smtp.Port = 587;
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
