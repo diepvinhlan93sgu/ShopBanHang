@@ -22,7 +22,7 @@
                                 <th style="padding-left:20px;" align="left" scope="col">Tổng tiền</th>
                                 <th scope="col"> </th>
                             </tr>
-                            @foreach (var item in MVCKLShop.Models.MySession.GioHang)
+                            @foreach (var item in MVCShop.Models.MySession.GioHang)
                             {
                                 <tr style="height:10px;"></tr>
                                 <tr>
@@ -64,7 +64,7 @@
                                     </td>
                                     <td class="productdeletecolumn" valign="top">
                                         <a href="../GioHang/DeleteCart/@Html.DisplayFor(m => item.MaSanPham)">
-                                            <input id="ctl00_MainContentHolder_ItemGridView_ctl02_btnDelete" type="image" style="border-width:0px;" alt="Delete" src="../../images/x.png" name="btnDelete">
+                                            <input id="ctl00_MainContentHolder_ItemGridView_ctl02_btnDelete" type="image" style="border-width:0px;" alt="Delete" src="../../Content/images/x.png" name="btnDelete">
                                         </a>
                                     </td>
                                 </tr>
@@ -82,13 +82,13 @@
                         <tr>
                             <td class="formlabel"> <b>Tổng Số Tiền Đã Mua Hàng :  </b> </td>
                             <td class="formfield">
-                                <span id="ctl00_MainContentHolder_lblSubTotal">@MVCKLShop.Models.MySession.TongTien VNĐ</span>
+                                <span id="ctl00_MainContentHolder_lblSubTotal">@MVCShop.Models.MySession.TongTien VNĐ</span>
                             </td>
                         </tr>
                         <tr>
                             <td class="formlabel"> <b>Xác Nhận Thanh Toán  </b> </td>
                             <td class="formfield">
-                                @using (Html.BeginForm("Payment", "GioHang", new { tongtien = MVCKLShop.Models.MySession.TongTien }))
+                                @using (Html.BeginForm("Payment", "GioHang", new { tongtien = MVCShop.Models.MySession.TongTien }))
                                 {
                                     <span id="ctl00_MainContentHolder_lblSubTotal"> <input type="submit" name="thanhtoan" value="Thanh Toán" /> </span>
                                 }

@@ -53,3 +53,5 @@ C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinF
 C:\Users\nguye\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormQLDonHang.resources
 E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormCTDonHang.resources
 E:\github\ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormQLDonHang.resources
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormCTDonHang.resources
+C:\Users\Minh\Documents\GitHub\WebServiceNhom07ShopBanHang\ShopBanHang\ShopWinForm\obj\Debug\ShopWinForm.FormQLDonHang.resources

@@ -92,7 +92,7 @@ namespace ShopBanHang
                 sp.MauSac = mausac;
                 sp.HinhAnh = hinhanh;
                 sp.SoLuong = soluong;
-
+                sp.TrangThai = 0;
                 db.SanPhams.Add(sp);
                 db.SaveChanges();
                 return true;

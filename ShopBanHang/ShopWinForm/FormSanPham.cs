@@ -159,7 +159,7 @@ namespace ShopWinForm
 
             string hinhanh = Path.GetFileName(txtha.Text);
             int trangthai = Int32.Parse(cboTrangthai.SelectedValue.ToString());
-            svsp.SuaSanPham(masp, masp, tensp, madm, gia, mota, kichthuoc, mausac, hinhanh, soluong, trangthai);
+            svsp.SuaSanPham(masp, masp, tensp, madm, gia, mota, kichthuoc, mausac, hinhanh,soluong, trangthai);
             MessageBox.Show("Sửa Thành Công");
             dvSanpham.DataSource = null;
             dvSanpham.DataSource = svspc.All();
@@ -174,10 +174,12 @@ namespace ShopWinForm
             string gia1 = txtgia.Text.ToString().Trim();
             decimal gia = decimal.Parse(gia1);           
             string soluong = txtsoluong.Text.ToString().Trim();
+            //string soluong = "0";
             string madm = cboDanhmuc.SelectedValue.ToString().Trim();
             string hinhanh = Path.GetFileName(txtha.Text);
             svsp.ThemSanPham(1, tensp, madm, gia, mota, kichthuoc, mausac, hinhanh, soluong);
             MessageBox.Show("Thêm Thành Công");
+            
             dvSanpham.DataSource = null;
             dvSanpham.DataSource = svspc.All();
             xoaform();
